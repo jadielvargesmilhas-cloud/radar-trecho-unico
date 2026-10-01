@@ -1,1 +1,413 @@
-{"combos": {}, "alertas": [], "execucoes": [], "uso_serpapi": {}}
+{
+  "combos": {
+    "MAD-SSA|2027-07-03|economy": {
+      "leituras": [],
+      "origem": "MAD",
+      "cidade": "Madrid",
+      "data": "2027-07-03",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "LIS-SSA|2027-07-03|economy": {
+      "leituras": [],
+      "origem": "LIS",
+      "cidade": "Lisboa",
+      "data": "2027-07-03",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "BCN-SSA|2027-07-03|economy": {
+      "leituras": [],
+      "origem": "BCN",
+      "cidade": "Barcelona",
+      "data": "2027-07-03",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "PAR-SSA|2027-07-03|economy": {
+      "leituras": [],
+      "origem": "PAR",
+      "cidade": "Paris",
+      "data": "2027-07-03",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "MAD-SSA|2027-07-04|economy": {
+      "leituras": [],
+      "origem": "MAD",
+      "cidade": "Madrid",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "LIS-SSA|2027-07-04|economy": {
+      "leituras": [],
+      "origem": "LIS",
+      "cidade": "Lisboa",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "BCN-SSA|2027-07-04|economy": {
+      "leituras": [],
+      "origem": "BCN",
+      "cidade": "Barcelona",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "PAR-SSA|2027-07-04|economy": {
+      "leituras": [],
+      "origem": "PAR",
+      "cidade": "Paris",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "MAD-SSA|2027-07-05|economy": {
+      "leituras": [],
+      "origem": "MAD",
+      "cidade": "Madrid",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "LIS-SSA|2027-07-05|economy": {
+      "leituras": [],
+      "origem": "LIS",
+      "cidade": "Lisboa",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "BCN-SSA|2027-07-05|economy": {
+      "leituras": [],
+      "origem": "BCN",
+      "cidade": "Barcelona",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "PAR-SSA|2027-07-05|economy": {
+      "leituras": [],
+      "origem": "PAR",
+      "cidade": "Paris",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "MAD-SSA|2027-07-06|economy": {
+      "leituras": [],
+      "origem": "MAD",
+      "cidade": "Madrid",
+      "data": "2027-07-06",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "LIS-SSA|2027-07-06|economy": {
+      "leituras": [],
+      "origem": "LIS",
+      "cidade": "Lisboa",
+      "data": "2027-07-06",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "BCN-SSA|2027-07-06|economy": {
+      "leituras": [],
+      "origem": "BCN",
+      "cidade": "Barcelona",
+      "data": "2027-07-06",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "PAR-SSA|2027-07-06|economy": {
+      "leituras": [],
+      "origem": "PAR",
+      "cidade": "Paris",
+      "data": "2027-07-06",
+      "classe": "economy",
+      "tipo": "principal"
+    },
+    "MAD-SSA|2027-07-03|business": {
+      "leituras": [],
+      "origem": "MAD",
+      "cidade": "Madrid",
+      "data": "2027-07-03",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "LIS-SSA|2027-07-03|business": {
+      "leituras": [],
+      "origem": "LIS",
+      "cidade": "Lisboa",
+      "data": "2027-07-03",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "BCN-SSA|2027-07-03|business": {
+      "leituras": [],
+      "origem": "BCN",
+      "cidade": "Barcelona",
+      "data": "2027-07-03",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "PAR-SSA|2027-07-03|business": {
+      "leituras": [],
+      "origem": "PAR",
+      "cidade": "Paris",
+      "data": "2027-07-03",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "MAD-SSA|2027-07-04|business": {
+      "leituras": [],
+      "origem": "MAD",
+      "cidade": "Madrid",
+      "data": "2027-07-04",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "LIS-SSA|2027-07-04|business": {
+      "leituras": [],
+      "origem": "LIS",
+      "cidade": "Lisboa",
+      "data": "2027-07-04",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "BCN-SSA|2027-07-04|business": {
+      "leituras": [],
+      "origem": "BCN",
+      "cidade": "Barcelona",
+      "data": "2027-07-04",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "PAR-SSA|2027-07-04|business": {
+      "leituras": [],
+      "origem": "PAR",
+      "cidade": "Paris",
+      "data": "2027-07-04",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "MAD-SSA|2027-07-05|business": {
+      "leituras": [],
+      "origem": "MAD",
+      "cidade": "Madrid",
+      "data": "2027-07-05",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "LIS-SSA|2027-07-05|business": {
+      "leituras": [],
+      "origem": "LIS",
+      "cidade": "Lisboa",
+      "data": "2027-07-05",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "BCN-SSA|2027-07-05|business": {
+      "leituras": [],
+      "origem": "BCN",
+      "cidade": "Barcelona",
+      "data": "2027-07-05",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "PAR-SSA|2027-07-05|business": {
+      "leituras": [],
+      "origem": "PAR",
+      "cidade": "Paris",
+      "data": "2027-07-05",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "MAD-SSA|2027-07-06|business": {
+      "leituras": [],
+      "origem": "MAD",
+      "cidade": "Madrid",
+      "data": "2027-07-06",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "LIS-SSA|2027-07-06|business": {
+      "leituras": [],
+      "origem": "LIS",
+      "cidade": "Lisboa",
+      "data": "2027-07-06",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "BCN-SSA|2027-07-06|business": {
+      "leituras": [],
+      "origem": "BCN",
+      "cidade": "Barcelona",
+      "data": "2027-07-06",
+      "classe": "business",
+      "tipo": "principal"
+    },
+    "PAR-SSA|2027-07-06|business": {
+      "leituras": [],
+      "origem": "PAR",
+      "cidade": "Paris",
+      "data": "2027-07-06",
+      "classe": "business",
+      "tipo": "principal"
+    }
+  },
+  "alertas": [],
+  "execucoes": [
+    {
+      "quando": "2026-10-01T00:38:49+00:00",
+      "ok": 0,
+      "falhas": 32,
+      "via_serpapi": 0,
+      "detalhes": [
+        "Madrid 03/07 Econômica: No module named 'typing_extensions' | No module named 'typing_extensions'",
+        "Lisboa 03/07 Econômica: No module named 'typing_extensions' | No module named 'typing_extensions'",
+        "Barcelona 03/07 Econômica: No module named 'typing_extensions' | No module named 'typing_extensions'",
+        "Paris 03/07 Econômica: No module named 'typing_extensions' | No module named 'typing_extensions'",
+        "Madrid 04/07 Econômica: No module named 'typing_extensions' | No module named 'typing_extensions'",
+        "Lisboa 04/07 Econômica: No module named 'typing_extensions' | No module named 'typing_extensions'",
+        "Barcelona 04/07 Econômica: No module named 'typing_extensions' | No module named 'typing_extensions'",
+        "Paris 04/07 Econômica: No module named 'typing_extensions' | No module named 'typing_extensions'",
+        "Madrid 05/07 Econômica: No module named 'typing_extensions'",
+        "Lisboa 05/07 Econômica: No module named 'typing_extensions'",
+        "Barcelona 05/07 Econômica: No module named 'typing_extensions'",
+        "Paris 05/07 Econômica: No module named 'typing_extensions'",
+        "Madrid 06/07 Econômica: No module named 'typing_extensions'",
+        "Lisboa 06/07 Econômica: No module named 'typing_extensions'",
+        "Barcelona 06/07 Econômica: No module named 'typing_extensions'",
+        "Paris 06/07 Econômica: No module named 'typing_extensions'",
+        "Madrid 03/07 Executiva: No module named 'typing_extensions'",
+        "Lisboa 03/07 Executiva: No module named 'typing_extensions'",
+        "Barcelona 03/07 Executiva: No module named 'typing_extensions'",
+        "Paris 03/07 Executiva: No module named 'typing_extensions'",
+        "Madrid 04/07 Executiva: No module named 'typing_extensions'",
+        "Lisboa 04/07 Executiva: No module named 'typing_extensions'",
+        "Barcelona 04/07 Executiva: No module named 'typing_extensions'",
+        "Paris 04/07 Executiva: No module named 'typing_extensions'",
+        "Madrid 05/07 Executiva: No module named 'typing_extensions'",
+        "Lisboa 05/07 Executiva: No module named 'typing_extensions'",
+        "Barcelona 05/07 Executiva: No module named 'typing_extensions'",
+        "Paris 05/07 Executiva: No module named 'typing_extensions'",
+        "Madrid 06/07 Executiva: No module named 'typing_extensions'",
+        "Lisboa 06/07 Executiva: No module named 'typing_extensions'",
+        "Barcelona 06/07 Executiva: No module named 'typing_extensions'",
+        "Paris 06/07 Executiva: No module named 'typing_extensions'"
+      ],
+      "descoberta": {
+        "cidades": 21,
+        "falhas": 168,
+        "promovidas": {
+          "economy": [],
+          "business": []
+        }
+      }
+    }
+  ],
+  "uso_serpapi": {
+    "2026-10": 8
+  },
+  "config": {
+    "destino": "SSA",
+    "adultos": 2,
+    "moeda": "BRL",
+    "datas": [
+      "2027-07-03",
+      "2027-07-04",
+      "2027-07-05",
+      "2027-07-06"
+    ],
+    "classes": [
+      "economy",
+      "business"
+    ],
+    "origens": [
+      {
+        "id": "MAD",
+        "cidade": "Madrid"
+      },
+      {
+        "id": "LIS",
+        "cidade": "Lisboa"
+      },
+      {
+        "id": "BCN",
+        "cidade": "Barcelona"
+      },
+      {
+        "id": "PAR",
+        "cidade": "Paris"
+      }
+    ]
+  },
+  "alternativas": {
+    "economy": [],
+    "business": []
+  },
+  "descoberta": {
+    "quando": "2026-10-01T00:52:37+00:00",
+    "falhas": 168,
+    "resultados": {
+      "economy": {},
+      "business": {}
+    },
+    "referencia": {
+      "economy": {},
+      "business": {}
+    },
+    "sem_resultado": {
+      "economy": [
+        "Porto",
+        "Faro",
+        "Vigo",
+        "Bilbao",
+        "Valência",
+        "Málaga",
+        "Sevilha",
+        "Palma de Maiorca",
+        "Londres",
+        "Amsterdã",
+        "Bruxelas",
+        "Frankfurt",
+        "Munique",
+        "Berlim",
+        "Zurique",
+        "Genebra",
+        "Viena",
+        "Roma",
+        "Milão",
+        "Nice",
+        "Lyon"
+      ],
+      "business": [
+        "Porto",
+        "Faro",
+        "Vigo",
+        "Bilbao",
+        "Valência",
+        "Málaga",
+        "Sevilha",
+        "Palma de Maiorca",
+        "Londres",
+        "Amsterdã",
+        "Bruxelas",
+        "Frankfurt",
+        "Munique",
+        "Berlim",
+        "Zurique",
+        "Genebra",
+        "Viena",
+        "Roma",
+        "Milão",
+        "Nice",
+        "Lyon"
+      ]
+    },
+    "dia_da_semana": "domingo"
+  },
+  "atualizado_em": "2026-10-01T00:52:37+00:00"
+}
