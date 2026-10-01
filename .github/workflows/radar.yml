@@ -1,0 +1,75 @@
+name: Radar Trecho Unico
+
+on:
+  schedule:
+    - cron: "0 11 * * *"      # todo dia às 08:00 de Salvador (11:00 UTC)
+  workflow_dispatch:
+    inputs:
+      teste_aviso:
+        description: "Mandar também uma notificação de teste para o celular?"
+        type: choice
+        options: ["nao", "sim"]
+        default: "nao"
+      descobrir:
+        description: "Varrer agora outras cidades da Europa (leva uns 20 min)?"
+        type: choice
+        options: ["nao", "sim"]
+        default: "nao"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: radar-trecho
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar
+        run: pip install -r requirements.txt
+
+      - name: Buscar preços (e varrer a Europa aos domingos)
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TESTE_AVISO: ${{ inputs.teste_aviso }}
+          DESCOBRIR: ${{ inputs.descobrir }}
+          PAINEL_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python monitor.py
+
+      - name: Guardar histórico
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add data/historico.json
+          git diff --cached --quiet || git commit -m "Leitura de $(date -u +%F)"
+          git push
+
+      - name: Preparar painel
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+  publicar:
+    needs: buscar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.painel.outputs.page_url }}
+    steps:
+      - name: Publicar painel
+        id: painel
+        uses: actions/deploy-pages@v4
