@@ -69,6 +69,14 @@ def link_google(aeroporto: str, destino: str, dia: str, classe: str, adultos: in
     return "https://www.google.com/travel/flights?" + urlencode(q.params())
 
 
+def link_seguro(aeroporto: str, cfg: dict, dia: str, classe: str, reserva: str | None = None) -> str | None:
+    """Nunca deixa um problema no link derrubar um preço que já foi lido."""
+    try:
+        return link_google(aeroporto, cfg["destino"], dia, classe, cfg["adultos"], cfg["moeda"])
+    except Exception:  # noqa: BLE001
+        return reserva
+
+
 def chave_combo(origem_id: str, destino: str, dia: str, classe: str) -> str:
     return f"{origem_id}-{destino}|{dia}|{classe}"
 
@@ -134,8 +142,8 @@ def buscar_serpapi(cfg: dict, origem: dict, dia: str, classe: str, chave: str, s
     saida = ((trechos[0].get("departure_airport") or {}).get("time") or "")[-5:] if trechos else None
     return {
         "preco_total": round(float(m["price"])), "fonte": "SerpApi",
-        "link": link_google((trechos[0].get("departure_airport") or {}).get("id") or origem["serpapi"].split(",")[0],
-                            cfg["destino"], dia, classe, cfg["adultos"], cfg["moeda"]),
+        "link": link_seguro((trechos[0].get("departure_airport") or {}).get("id") or origem["serpapi"].split(",")[0],
+                            cfg, dia, classe, (dados.get("search_metadata") or {}).get("google_flights_url")),
         "aeroporto": (trechos[0].get("departure_airport") or {}).get("id") if trechos else None,
         "companhia": " + ".join(cias) or None, "escalas": max(len(trechos) - 1, 0),
         "duracao_min": m.get("total_duration"), "saida": saida or None, "opcoes": len(opcoes),
@@ -167,8 +175,9 @@ def descoberta_devida(cfg: dict, hist: dict, hoje: date) -> bool:
     d = cfg.get("descoberta") or {}
     if not d.get("ativa") or not d.get("candidatas"):
         return False
-    if os.getenv("DESCOBRIR", "").lower() == "sim" or not hist.get("descoberta"):
-        return True
+    feita = hist.get("descoberta") or {}
+    if os.getenv("DESCOBRIR", "").lower() == "sim" or not any((feita.get("resultados") or {}).values()):
+        return True                                    # nunca rodou, ou rodou sem conseguir ler nenhuma cidade
     return DIAS_SEMANA[hoje.weekday()] == str(d.get("dia_da_semana", "domingo")).lower()
 
 

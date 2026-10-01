@@ -445,6 +445,11 @@ function desenharDescoberta(){
   }).filter(x=>x.melhor!=null).sort((a,b)=>b.melhor-a.melhor);
   const qtd=Object.keys(res).length+((D.sem_resultado||{})[classe]||[]).length;
   sec.hidden=false;
+  if (!Object.keys(res).length){
+    sub.textContent="";
+    el.innerHTML=`<p style="margin:0;color:var(--alta)">A varredura de ${dataCurta(D.quando)} não conseguiu ler nenhuma das ${qtd} outras cidades em ${CLASSE_PT[classe].toLowerCase()}. O robô tenta de novo na próxima busca.</p>`;
+    return;
+  }
   if (!linhas.length){
     sub.textContent="";
     el.innerHTML=`<p style="margin:0;color:var(--suave)">Varredura de ${dataCurta(D.quando)}: nenhuma das ${qtd} outras cidades da Europa tem voo mais barato que as 4 principais em ${CLASSE_PT[classe].toLowerCase()}. A próxima varredura é no ${esc(D.dia_da_semana||"domingo")}.</p>`;
