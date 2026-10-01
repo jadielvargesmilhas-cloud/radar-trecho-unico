@@ -1,0 +1,211 @@
+{
+  "_leia_me": "Edite só este arquivo. Datas no formato AAAA-MM-DD. Trecho único (só ida) de cada cidade para o destino.",
+  "destino": "SSA",
+  "adultos": 2,
+  "moeda": "BRL",
+  "datas": [
+    "2027-07-03",
+    "2027-07-04",
+    "2027-07-05",
+    "2027-07-06"
+  ],
+  "classes": [
+    "economy",
+    "business"
+  ],
+  "alertar_quando_cair_pelo_menos_reais": 1,
+  "serpapi_max_por_dia": 8,
+  "serpapi_max_por_mes": 240,
+  "pausa_entre_buscas_segundos": 4,
+  "origens": [
+    {
+      "id": "MAD",
+      "cidade": "Madrid",
+      "serpapi": "MAD",
+      "aeroportos": [
+        "MAD"
+      ]
+    },
+    {
+      "id": "LIS",
+      "cidade": "Lisboa",
+      "serpapi": "LIS",
+      "aeroportos": [
+        "LIS"
+      ]
+    },
+    {
+      "id": "BCN",
+      "cidade": "Barcelona",
+      "serpapi": "BCN",
+      "aeroportos": [
+        "BCN"
+      ]
+    },
+    {
+      "id": "PAR",
+      "cidade": "Paris",
+      "serpapi": "CDG,ORY",
+      "aeroportos": [
+        "CDG",
+        "ORY"
+      ]
+    }
+  ],
+  "descoberta": {
+    "_explicacao": "Varredura semanal de outras cidades da Europa. Só entram as que tiverem voo MAIS BARATO que as 4 principais em pelo menos uma data; essas passam a ser monitoradas todo dia.",
+    "ativa": true,
+    "dia_da_semana": "domingo",
+    "promover_ate_por_classe": 5,
+    "candidatas": [
+      {
+        "id": "OPO",
+        "cidade": "Porto",
+        "aeroportos": [
+          "OPO"
+        ]
+      },
+      {
+        "id": "FAO",
+        "cidade": "Faro",
+        "aeroportos": [
+          "FAO"
+        ]
+      },
+      {
+        "id": "VGO",
+        "cidade": "Vigo",
+        "aeroportos": [
+          "VGO"
+        ]
+      },
+      {
+        "id": "BIO",
+        "cidade": "Bilbao",
+        "aeroportos": [
+          "BIO"
+        ]
+      },
+      {
+        "id": "VLC",
+        "cidade": "Valência",
+        "aeroportos": [
+          "VLC"
+        ]
+      },
+      {
+        "id": "AGP",
+        "cidade": "Málaga",
+        "aeroportos": [
+          "AGP"
+        ]
+      },
+      {
+        "id": "SVQ",
+        "cidade": "Sevilha",
+        "aeroportos": [
+          "SVQ"
+        ]
+      },
+      {
+        "id": "PMI",
+        "cidade": "Palma de Maiorca",
+        "aeroportos": [
+          "PMI"
+        ]
+      },
+      {
+        "id": "LON",
+        "cidade": "Londres",
+        "aeroportos": [
+          "LHR",
+          "LGW"
+        ]
+      },
+      {
+        "id": "AMS",
+        "cidade": "Amsterdã",
+        "aeroportos": [
+          "AMS"
+        ]
+      },
+      {
+        "id": "BRU",
+        "cidade": "Bruxelas",
+        "aeroportos": [
+          "BRU"
+        ]
+      },
+      {
+        "id": "FRA",
+        "cidade": "Frankfurt",
+        "aeroportos": [
+          "FRA"
+        ]
+      },
+      {
+        "id": "MUC",
+        "cidade": "Munique",
+        "aeroportos": [
+          "MUC"
+        ]
+      },
+      {
+        "id": "BER",
+        "cidade": "Berlim",
+        "aeroportos": [
+          "BER"
+        ]
+      },
+      {
+        "id": "ZRH",
+        "cidade": "Zurique",
+        "aeroportos": [
+          "ZRH"
+        ]
+      },
+      {
+        "id": "GVA",
+        "cidade": "Genebra",
+        "aeroportos": [
+          "GVA"
+        ]
+      },
+      {
+        "id": "VIE",
+        "cidade": "Viena",
+        "aeroportos": [
+          "VIE"
+        ]
+      },
+      {
+        "id": "ROM",
+        "cidade": "Roma",
+        "aeroportos": [
+          "FCO"
+        ]
+      },
+      {
+        "id": "MIL",
+        "cidade": "Milão",
+        "aeroportos": [
+          "MXP"
+        ]
+      },
+      {
+        "id": "NCE",
+        "cidade": "Nice",
+        "aeroportos": [
+          "NCE"
+        ]
+      },
+      {
+        "id": "LYS",
+        "cidade": "Lyon",
+        "aeroportos": [
+          "LYS"
+        ]
+      }
+    ]
+  }
+}

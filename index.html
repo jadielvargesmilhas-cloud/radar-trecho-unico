@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar de Tarifas — Europa → Salvador, trecho único</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Chivo+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noite:#0D1B2A; --painel:#13253A; --linha:#22384F; --texto:#E6EDF3; --suave:#8BA0B5;
+  --ambar:#FFB547; --queda:#34D399; --alta:#FF7A6B; --flap:#0A1522; --flap-borda:#1B2E44;
+  --d1:#FFB547; --d2:#5EC8F2; --d3:#F27CB0; --d4:#A99BFF;
+  --fonte-placa:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --fonte-texto:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --fonte-flap:"Chivo Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --noite:#EEF2F6; --painel:#FFFFFF; --linha:#D5DEE7; --texto:#0F2233; --suave:#56697C;
+    --ambar:#B86E00; --queda:#0E8A5F; --alta:#C63D2F;
+    --d1:#C97A00; --d2:#1686B8; --d3:#C2357A; --d4:#5B49D6;
+  }
+}
+:root[data-theme="light"]{
+  --noite:#EEF2F6; --painel:#FFFFFF; --linha:#D5DEE7; --texto:#0F2233; --suave:#56697C;
+  --ambar:#B86E00; --queda:#0E8A5F; --alta:#C63D2F;
+  --d1:#C97A00; --d2:#1686B8; --d3:#C2357A; --d4:#5B49D6;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--noite);color:var(--texto);font:16px/1.5 var(--fonte-texto);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ambar);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+
+header.topo{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px;margin-bottom:20px}
+h1{font:700 clamp(2.2rem,5vw,3.4rem)/1 var(--fonte-placa);margin:0}
+h1 .seta{color:var(--ambar)}
+.viagem{margin:8px 0 0;color:var(--suave);font-size:1.02rem;max-width:64ch}
+.viagem strong{color:var(--texto);font-weight:600}
+.status{display:flex;gap:10px;flex-wrap:wrap}
+.pilula{background:var(--painel);border:1px solid var(--linha);border-radius:999px;padding:6px 14px;font-size:.88rem;color:var(--suave);white-space:nowrap}
+.pilula b{color:var(--texto);font-weight:600}
+.luz{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--queda);margin-right:7px;vertical-align:1px}
+.pilula.ruim .luz{background:var(--alta)}
+.aviso{border:1px dashed var(--ambar);background:color-mix(in srgb,var(--ambar) 10%,transparent);padding:10px 14px;border-radius:10px;margin:0 0 18px;font-size:.95rem}
+
+.classe{display:inline-flex;background:var(--painel);border:1px solid var(--linha);border-radius:12px;padding:4px;margin:0 0 16px}
+.classe button{font:600 1rem var(--fonte-texto);border:0;background:transparent;color:var(--suave);padding:9px 20px;border-radius:9px;cursor:pointer}
+.classe button[aria-pressed="true"]{background:var(--ambar);color:#0D1B2A}
+
+/* quadro */
+.quadro{background:var(--flap);border:1px solid var(--flap-borda);border-radius:14px;overflow:hidden;box-shadow:0 20px 50px -30px #000;color:#E6EDF3}
+.quadro-cab{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--flap-borda);color:#FFB547;font:600 1.05rem var(--fonte-placa);letter-spacing:.06em}
+.quadro-cab span:last-child{color:#8BA0B5;font-family:var(--fonte-texto);font-size:.85rem;letter-spacing:0}
+.fila{display:grid;grid-template-columns:150px 170px 1fr 120px 160px 1.2fr auto;align-items:center;gap:16px;padding:16px 20px;border-top:1px solid var(--flap-borda)}
+.fila:first-child{border-top:0}
+.fila.top{background:rgba(255,181,71,.07);box-shadow:inset 4px 0 0 #FFB547}
+.dia{font:700 1.5rem/1 var(--fonte-placa)}
+.dia small{display:block;font:500 .8rem var(--fonte-texto);color:#8BA0B5;margin-top:4px}
+.cidade{font:700 1.55rem/1 var(--fonte-placa);display:flex;align-items:center;gap:8px}
+.cidade small{font:500 .78rem var(--fonte-flap);color:#8BA0B5}
+.selo-top{font:600 .72rem var(--fonte-texto);color:#0D1B2A;background:#FFB547;border-radius:999px;padding:2px 8px;margin-top:6px;display:inline-block}
+.flaps{display:inline-flex;gap:3px}
+.flaps b{font:700 1.35rem/1 var(--fonte-flap);background:#13253A;border:1px solid #22384F;border-radius:4px;padding:7px 4px;min-width:1.35em;text-align:center;color:#FFB547;position:relative}
+.flaps b::after{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px solid rgba(0,0,0,.55)}
+.flaps b.sep{background:none;border:0;min-width:.5em;padding:7px 0}
+.flaps b.sep::after{display:none}
+.rot{font:500 .72rem var(--fonte-texto);color:#8BA0B5;display:block;margin-bottom:3px}
+.pp{font:500 1rem var(--fonte-flap)}
+.voo{font-size:.88rem;color:#B9C7D4}
+.mono{font:500 .8rem var(--fonte-flap);color:#8BA0B5}
+.vs{font:600 .92rem var(--fonte-texto);color:#34D399;white-space:nowrap}
+.cidade small{white-space:nowrap}
+a.ver{font:600 .85rem var(--fonte-texto);text-decoration:none;border:1px solid #22384F;padding:7px 12px;border-radius:8px;white-space:nowrap}
+a.ver:hover{border-color:#FFB547;color:#FFB547}
+.vazio{padding:28px 20px;color:#B9C7D4}
+
+section{margin-top:34px}
+h2{font:700 1.7rem/1.1 var(--fonte-placa);margin:0 0 4px}
+.sub{color:var(--suave);margin:0 0 16px;font-size:.95rem;max-width:80ch}
+.cartao{background:var(--painel);border:1px solid var(--linha);border-radius:12px;padding:18px}
+
+/* matriz */
+.rolagem{overflow-x:auto}
+table.matriz{border-collapse:separate;border-spacing:6px;width:100%;min-width:560px}
+.matriz th{font:600 .95rem var(--fonte-texto);color:var(--suave);text-align:center;padding:4px}
+.matriz th.lin{text-align:left;font:700 1.15rem var(--fonte-placa);color:var(--texto);white-space:nowrap}
+.matriz td{padding:0}
+.celula{width:100%;border:1px solid var(--linha);border-radius:10px;padding:10px 8px;text-align:center;cursor:pointer;background:var(--calor,transparent);color:var(--texto);font:inherit}
+.celula .v{font:700 1.05rem var(--fonte-flap);display:block}
+.celula .d{font:600 .78rem var(--fonte-texto)}
+.celula.min{outline:2px solid var(--queda);outline-offset:-2px}
+.celula.global{outline:3px solid var(--ambar)}
+.celula[aria-pressed="true"]{box-shadow:0 0 0 3px var(--texto)}
+.celula.nada{cursor:default;color:var(--suave)}
+.caiu{color:var(--queda)}.subiu{color:var(--alta)}.igual{color:var(--suave)}
+.dc{display:none}
+.selo-alt{font:600 .72rem var(--fonte-texto);color:#5EC8F2;border:1px solid #5EC8F266;border-radius:999px;padding:1px 8px;margin:6px 0 0 6px;display:inline-block}
+.mini-alt{display:block;font:600 .66rem var(--fonte-texto);color:var(--d2)}
+.th-alt{border-bottom:2px dashed var(--d2)}
+table.desc{border-collapse:collapse;width:100%;min-width:620px}
+.desc th{font:600 .82rem var(--fonte-texto);color:var(--suave);text-align:right;padding:8px 10px;white-space:nowrap}
+.desc th:first-child{text-align:left}
+.desc td{padding:10px;border-top:1px solid var(--linha);text-align:right;font:500 .92rem var(--fonte-flap);white-space:nowrap}
+.desc td:first-child{text-align:left;font:600 1rem var(--fonte-texto)}
+.desc td.bate{color:var(--queda);font-weight:700}
+.desc td.bate a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.desc td.quase{color:var(--ambar)}
+.desc td.nd{color:var(--suave)}
+.desc tr.ref td{color:var(--suave);font-style:italic;background:color-mix(in srgb,var(--suave) 8%,transparent)}
+.desc .aer{display:block;font:500 .72rem var(--fonte-flap);color:var(--suave)}
+.tag-mon{font:600 .7rem var(--fonte-texto);color:var(--d2);border:1px solid var(--d2);border-radius:999px;padding:1px 7px;margin-left:6px;vertical-align:2px}
+.vg{font:600 .88rem var(--fonte-texto)}
+.legenda{display:flex;gap:18px;flex-wrap:wrap;font-size:.85rem;color:var(--suave);margin-top:10px}
+.legenda span::before{content:"";display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px}
+.legenda .l1::before{outline:2px solid var(--queda);outline-offset:-2px}
+.legenda .l2::before{outline:3px solid var(--ambar);outline-offset:-3px}
+
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.chip{font:600 .9rem var(--fonte-texto);border:1px solid var(--linha);background:transparent;color:var(--texto);padding:6px 12px;border-radius:999px;cursor:pointer;display:flex;align-items:center;gap:8px}
+.chip i{width:10px;height:10px;border-radius:2px}
+.chip[aria-pressed="false"]{opacity:.45}
+#titulo-graf{font-weight:600;margin:0 0 10px}
+#grafico{width:100%;height:auto;display:block}
+#grafico text{fill:var(--suave);font:12px var(--fonte-texto)}
+#dica{position:fixed;pointer-events:none;background:#0A1522;color:#E6EDF3;border:1px solid #1B2E44;border-radius:8px;padding:8px 10px;font-size:.85rem;display:none;z-index:5;min-width:190px}
+#dica div{display:flex;justify-content:space-between;gap:14px}
+
+ol.alertas{list-style:none;margin:0;padding:0}
+ol.alertas li{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;padding:12px 0;border-top:1px solid var(--linha);align-items:baseline}
+ol.alertas li:first-child{border-top:0}
+.quando{color:var(--suave);font-size:.85rem;min-width:70px}
+.eco{font:600 .95rem var(--fonte-flap);color:var(--queda)}
+.tag-rec{font:600 .75rem var(--fonte-texto);color:var(--ambar);margin-left:6px}
+footer{margin-top:40px;color:var(--suave);font-size:.85rem;max-width:80ch}
+
+@media (max-width:900px){
+  .fila{grid-template-columns:1fr 1fr;gap:12px 14px}
+  .fila .c-preco,.fila .c-voo,.fila .c-link{grid-column:1/-1}
+  .fila .c-link a{display:block;text-align:center;padding:10px}
+  .flaps b{font-size:1.5rem}
+}
+@media (max-width:640px){
+  .wrap{padding:18px 14px 40px} .cartao{padding:10px}
+  table.matriz{border-spacing:3px;min-width:0}
+  .matriz th{font-size:.8rem;padding:2px}
+  .matriz th.lin{font-size:.95rem}
+  .dl,.rs{display:none} .dc{display:inline}
+  table.desc{min-width:0} .desc th,.desc td{padding:8px 3px;font-size:.76rem} .desc td:first-child{font-size:.86rem;white-space:normal;max-width:110px} .desc .col-vg{display:none}
+  .tag-mon{display:table;margin:3px 0 0} .desc .aer{white-space:nowrap}
+  .celula{padding:8px 2px;border-radius:8px}
+  .celula .v{font-size:.84rem} .celula .d{font-size:.68rem}
+}
+@media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topo">
+    <div>
+      <h1>Europa <span class="seta">→</span> Salvador</h1>
+      <p class="viagem" id="viagem">Carregando…</p>
+    </div>
+    <div class="status" id="status"></div>
+  </header>
+
+  <p class="aviso" id="aviso" hidden></p>
+
+  <div class="classe" role="group" aria-label="Classe">
+    <button data-c="economy" aria-pressed="true">Econômica</button>
+    <button data-c="business" aria-pressed="false">Executiva</button>
+  </div>
+
+  <div class="quadro" role="region" aria-label="Rota mais barata de cada dia">
+    <div class="quadro-cab"><span>MAIS BARATA DE CADA DIA</span><span id="cab-info"></span></div>
+    <div id="quadro"></div>
+  </div>
+
+  <section>
+    <h2>Todas as rotas, todos os dias</h2>
+    <p class="sub">Preço de hoje, só ida, total para todos os passageiros. A seta mostra a mudança desde a leitura anterior. Toque numa casa para ver o histórico dela no gráfico abaixo.</p>
+    <div class="cartao rolagem"><table class="matriz" id="matriz"></table>
+      <div class="legenda"><span class="l1">mais barata do dia</span><span class="l2">mais barata de todas</span></div></div>
+  </section>
+
+  <section id="sec-desc" hidden>
+    <h2>Outras cidades mais baratas</h2>
+    <p class="sub" id="sub-desc"></p>
+    <div class="cartao rolagem" id="descoberta"></div>
+  </section>
+
+  <section>
+    <h2>Como os preços andaram</h2>
+    <p class="sub" id="sub-graf"></p>
+    <div class="cartao">
+      <p id="titulo-graf"></p>
+      <div class="chips" id="chips"></div>
+      <svg id="grafico" viewBox="0 0 900 340" role="img" aria-label="Histórico de preços"></svg>
+    </div>
+  </section>
+
+  <section>
+    <h2>Avisos enviados</h2>
+    <p class="sub">Toda queda em relação à leitura anterior entra aqui e vai para o seu celular num resumo diário.</p>
+    <div class="cartao"><ol class="alertas" id="alertas"></ol></div>
+  </section>
+
+  <footer id="rodape"></footer>
+</div>
+<div id="dica" role="status"></div>
+
+<script>
+const CLASSE_PT = {economy:"Econômica", business:"Executiva"};
+const COR_DIA = ["var(--d1)","var(--d2)","var(--d3)","var(--d4)","var(--ambar)","var(--suave)"];
+const brl = v => v==null ? "—" : "R$ " + Math.round(v).toLocaleString("pt-BR");
+const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const dia = s => new Date(s+"T12:00:00");
+const diaCurto = s => dia(s).toLocaleDateString("pt-BR",{day:"2-digit",month:"short"}).replace(".","");
+const semana = s => dia(s).toLocaleDateString("pt-BR",{weekday:"long"});
+const dataCurta = iso => new Date(iso).toLocaleDateString("pt-BR",{day:"2-digit",month:"short"}).replace(".","");
+let H, classe = "economy", selecionada = null;
+
+/* Link do Google Flights já preenchido: só ida, origem, destino, data, passageiros e classe.
+   Codifica o mesmo "tfs" que a busca do robô usa (protobuf em base64). */
+const ASSENTO = {economy:1, "premium-economy":2, business:3, first:4};
+function varint(n){ const b=[]; while(n>127){ b.push((n&127)|128); n=Math.floor(n/128); } b.push(n); return b; }
+function campo(num, bytes){ return [...varint((num<<3)|2), ...varint(bytes.length), ...bytes]; }
+const utf8 = t => [...new TextEncoder().encode(t)];
+function tfsGoogle(aero, destino, data, cl, adultos){
+  const trecho=[...campo(2,utf8(data)), ...campo(13,campo(2,utf8(aero))), ...campo(14,campo(2,utf8(destino)))];
+  const bytes=[...campo(3,trecho), ...campo(8,Array(adultos).fill(1)), ...varint(9<<3), ...varint(ASSENTO[cl]||1), ...varint(19<<3), ...varint(2)];
+  return btoa(String.fromCharCode(...bytes));
+}
+function linkGoogle(aero, data, cl){
+  const c=cfg();
+  return "https://www.google.com/travel/flights?tfs="+encodeURIComponent(tfsGoogle(aero, c.destino||"SSA", data, cl, c.adultos||2))+"&hl=pt-BR&curr="+(c.moeda||"BRL");
+}
+const AERO_PADRAO = {PAR:"CDG", LON:"LHR", ROM:"FCO", MIL:"MXP"};
+const aeroDe = (o,l) => l?.aeroporto || o?.aeroportos?.[0] || AERO_PADRAO[o?.id] || o?.id;
+const visiveis = new Set();
+
+/* ---------- demonstração ---------- */
+function gerarDemo(){
+  const orig=[["MAD","Madrid","Iberia"],["LIS","Lisboa","TAP Air Portugal"],["BCN","Barcelona","TAP Air Portugal"],["PAR","Paris","Air France"]];
+  const datas=["2027-07-03","2027-07-04","2027-07-05","2027-07-06"];
+  let s=11; const rnd=()=>(s=(s*16807)%2147483647)/2147483647;
+  const combos={}, alertas=[], agora=Date.now();
+  for (const cl of ["economy","business"]) for (const [j,d] of datas.entries()) for (const [i,[id,cid,cia]] of orig.entries()){
+    const p0 = (cl==="economy"? 4200+i*380 : 17500+i*1500) + (j===1?-350:j*120)*(cl==="economy"?1:3);
+    let p=p0; const L=[];
+    for (let k=20;k>=0;k--){
+      const antes=p; p=Math.max(p0*.8, Math.round(p+(rnd()-.53)*p0*.04));
+      const quando=new Date(agora-k*864e5).toISOString();
+      L.push({quando,preco_total:p,por_pessoa:Math.round(p/2),companhia:cia,escalas:id==="LIS"?0:1,duracao_min:id==="LIS"?545:760,
+              saida:["22:40","13:05","19:30","10:15"][i],aeroporto:id==="PAR"?"CDG":id,fonte:"demonstração",link:"https://www.google.com/travel/flights"});
+      if (L.length>1 && p<antes){ const mn=Math.min(...L.slice(0,-1).map(x=>x.preco_total));
+        alertas.push({combo:`${id}-SSA|${d}|${cl}`,cidade:cid,data:d,classe:cl,quando,de:antes,para:p,economia:antes-p,tipo:p<mn?"recorde":"queda"}); }
+    }
+    combos[`${id}-SSA|${d}|${cl}`]={origem:id,cidade:cid,data:d,classe:cl,leituras:L,menor:L.reduce((a,b)=>a.preco_total<=b.preco_total?a:b)};
+  }
+  alertas.sort((a,b)=>a.quando<b.quando?-1:1);
+  const cand=[["OPO","Porto",["OPO"],-260,1400],["VGO","Vigo",["VGO"],-90,900],["LON","Londres",["LHR","LGW"],120,-1300],["AMS","Amsterdã",["AMS"],480,-900],
+              ["FRA","Frankfurt",["FRA"],900,300],["ROM","Roma",["FCO"],1300,2100],["MIL","Milão",["MXP"],1100,1700],["ZRH","Zurique",["ZRH"],1600,-200]];
+  const res={economy:{},business:{}}, alt={economy:[],business:[]}, ref={};
+  for (const cl of ["economy","business"]){
+    for (const [id,cid,aer,de,db] of cand){
+      const precos={}, vant={};
+      for (const d of datas){ const best=Math.min(...orig.map(([o])=>combos[`${o}-SSA|${d}|${cl}`].leituras.at(-1).preco_total));
+        const v=Math.round(best+(cl==="economy"?de:db)+(rnd()-.5)*200); precos[d]={preco_total:v,companhia:"TAP Air Portugal",escalas:1,duracao_min:840}; vant[d]=best-v; }
+      res[cl][id]={cidade:cid,aeroportos:aer,precos,vantagem:vant};
+    }
+    ref[cl]=Object.fromEntries(datas.map(d=>{ let b=null; for (const [o,c] of orig){ const v=combos[`${o}-SSA|${d}|${cl}`].leituras.at(-1).preco_total; if(!b||v<b.preco) b={preco:v,cidade:c}; } return [d,b]; }));
+    const top=Object.entries(res[cl]).map(([id,r])=>[Math.max(...Object.values(r.vantagem)),id]).sort((a,b)=>b[0]-a[0]).slice(0,3);
+    alt[cl]=top.map(([,id])=>({id,cidade:res[cl][id].cidade,aeroportos:res[cl][id].aeroportos}));
+    for (const a of alt[cl]) for (const d of datas){ const pr=res[cl][a.id].precos[d].preco_total;
+      combos[`${a.id}-SSA|${d}|${cl}`]={origem:a.id,cidade:a.cidade,data:d,classe:cl,tipo:"alternativa",
+        leituras:[{quando:new Date(agora).toISOString(),preco_total:pr,por_pessoa:Math.round(pr/2),companhia:"TAP Air Portugal",escalas:1,duracao_min:840,saida:"20:10",aeroporto:a.aeroportos[0],link:"https://www.google.com/travel/flights"}]}; }
+  }
+  return {demo:true,alternativas:alt,descoberta:{quando:new Date(agora).toISOString(),resultados:res,referencia:ref,sem_resultado:{economy:["Palma de Maiorca"],business:["Palma de Maiorca"]},dia_da_semana:"domingo"},combos,alertas,atualizado_em:new Date(agora).toISOString(),execucoes:[{ok:32,falhas:0,via_serpapi:0}],
+          uso_serpapi:{},config:{destino:"SSA",adultos:2,moeda:"BRL",datas,classes:["economy","business"],origens:orig.map(([id,cidade])=>({id,cidade}))}};
+}
+async function carregar(){
+  if (new URLSearchParams(location.search).has("demo")) return gerarDemo();
+  try{ const r=await fetch("data/historico.json?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw new Error("HTTP "+r.status); return await r.json(); }
+  catch(e){ if(!location.hostname.endsWith("github.io")) return gerarDemo(); return {erro:String(e),combos:{},alertas:[]}; }
+}
+
+/* ---------- utilidades de dados ---------- */
+const cfg = () => H.config || {datas:[],origens:[],adultos:2,destino:"SSA",classes:["economy","business"]};
+const combo = (orig,d) => H.combos[`${orig}-${cfg().destino}|${d}|${classe}`];
+const ult = c => c?.leituras?.length ? c.leituras.at(-1) : null;
+function melhorPrincipal(d){
+  const v=cfg().origens.map(o=>ult(combo(o.id,d))?.preco_total).filter(x=>x!=null); return v.length?Math.min(...v):null;
+}
+function altBate(a){ return cfg().datas.some(d=>{ const l=ult(combo(a.id,d)), m=melhorPrincipal(d); return l && m!=null && l.preco_total<m; }); }
+const origensClasse = () => [...cfg().origens.map(o=>({...o,alt:false})), ...((H.alternativas||{})[classe]||[]).filter(altBate).map(o=>({...o,alt:true}))];
+function rankDia(d){
+  return origensClasse().map(o=>({o, c:combo(o.id,d)})).filter(x=>ult(x.c)).sort((a,b)=>ult(a.c).preco_total-ult(b.c).preco_total);
+}
+
+/* ---------- quadro ---------- */
+function flaps(v){
+  const t=Math.round(v).toLocaleString("pt-BR");
+  return `<span class="flaps" aria-label="${esc(brl(v))}"><b class="sep">R$</b>${[...t].map(c=>c==="."?`<b class="sep">.</b>`:`<b data-alvo="${c}">${c}</b>`).join("")}</span>`;
+}
+function animar(){
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll("#quadro .flaps b[data-alvo]").forEach((el,i)=>{ const a=el.dataset.alvo; let n=0, v=5+(i%5);
+    const t=setInterval(()=>{ el.textContent = n>=v ? a : String((+a+n+1)%10); if(n++>=v) clearInterval(t); },55); });
+}
+function desenharQuadro(){
+  const el=document.getElementById("quadro");
+  const linhas = cfg().datas.map(d=>({d, r:rankDia(d)})).filter(x=>x.r.length);
+  if (!linhas.length){ el.innerHTML=`<div class="vazio">Nenhuma leitura em ${CLASSE_PT[classe].toLowerCase()} ainda. A busca roda sozinha todo dia às 08:00; para ver agora, abra a aba <b>Actions</b> do repositório no GitHub e clique em <b>Run workflow</b>.</div>`; return; }
+  const melhorGeral = Math.min(...linhas.map(x=>ult(x.r[0].c).preco_total));
+  el.innerHTML = linhas.map(({d,r})=>{
+    const {o,c}=r[0], l=ult(c), seg=r[1]?ult(r[1].c).preco_total-l.preco_total:null, top=l.preco_total===melhorGeral;
+    const esc_=l.escalas==null?"":(l.escalas===0?"direto":`${l.escalas} escala${l.escalas>1?"s":""}`);
+    const dur=l.duracao_min?`${Math.floor(l.duracao_min/60)}h${String(l.duracao_min%60).padStart(2,"0")}`:"";
+    return `<div class="fila${top?" top":""}">
+      <div class="dia">${diaCurto(d)}<small>${semana(d)}</small></div>
+      <div><div class="cidade">${esc(o.cidade)} <small>${esc(l.aeroporto||o.id)} → ${esc(cfg().destino)}</small></div>${top?`<span class="selo-top">dia mais barato</span>`:""}${o.alt?`<span class="selo-alt">alternativa</span>`:""}</div>
+      <div class="c-preco">${flaps(l.preco_total)}</div>
+      <div><span class="rot">Por pessoa</span><span class="pp">${brl(l.por_pessoa)}</span></div>
+      <div><span class="rot">2ª opção do dia</span>${seg==null?`<span class="mono">única lida</span>`:`<span class="vs">${brl(seg)} a menos</span><div class="mono">que ${esc(r[1].o.cidade)}</div>`}</div>
+      <div class="c-voo voo"><span class="rot">Voo</span>${esc(l.companhia||"—")}<div class="mono">${[l.saida?`sai ${l.saida}`:"",esc_,dur].filter(Boolean).join(", ")}</div></div>
+      <div class="c-link"><a class="ver" href="${esc(linkGoogle(aeroDe(o,l), d, classe))}" target="_blank" rel="noopener" title="Abre o Google Flights já preenchido">Ver voos</a></div>
+    </div>`;
+  }).join("");
+  animar();
+}
+
+/* ---------- matriz ---------- */
+function desenharMatriz(){
+  const datas=cfg().datas, origens=origensClasse(), t=document.getElementById("matriz");
+  const todos = datas.flatMap(d=>origens.map(o=>ult(combo(o.id,d))?.preco_total)).filter(v=>v!=null);
+  const mn=Math.min(...todos), mx=Math.max(...todos);
+  let h=`<thead><tr><th></th>${origens.map(o=>`<th class="${o.alt?"th-alt":""}">${esc(o.cidade)}${o.alt?`<span class="mini-alt">alternativa</span>`:""}</th>`).join("")}</tr></thead><tbody>`;
+  for (const d of datas){
+    const r=rankDia(d), minDia=r.length?ult(r[0].c).preco_total:null;
+    h+=`<tr><th class="lin" scope="row"><span class="dl">${diaCurto(d)}</span><span class="dc">${d.slice(8,10)}/${d.slice(5,7)}</span></th>`;
+    for (const o of origens){
+      const c=combo(o.id,d), l=ult(c);
+      if (!l){ h+=`<td><button class="celula nada" disabled><span class="v">—</span><span class="d">sem leitura</span></button></td>`; continue; }
+      const L=c.leituras, dif=L.length>1?l.preco_total-L.at(-2).preco_total:null;
+      const f = mx>mn ? (l.preco_total-mn)/(mx-mn) : 0;
+      const calor = `color-mix(in srgb, var(--queda) ${Math.round((1-f)*22)}%, color-mix(in srgb, var(--alta) ${Math.round(f*18)}%, transparent))`;
+      const k=`${o.id}-${cfg().destino}|${d}|${classe}`;
+      h+=`<td><button class="celula${l.preco_total===minDia?" min":""}${l.preco_total===mn?" global":""}" style="--calor:${calor}" data-k="${k}" aria-pressed="${selecionada===k}"
+            aria-label="${esc(o.cidade)} ${diaCurto(d)}: ${brl(l.preco_total)}">
+            <span class="v"><span class="rs">R$ </span>${Math.round(l.preco_total).toLocaleString("pt-BR")}</span>
+            <span class="d ${dif==null?"igual":dif<0?"caiu":dif>0?"subiu":"igual"}">${dif==null?"1ª leitura":dif<0?`▼ ${brl(-dif)}`:dif>0?`▲ ${brl(dif)}`:"="}</span></button></td>`;
+    }
+    h+="</tr>";
+  }
+  t.innerHTML = h+"</tbody>";
+  t.querySelectorAll(".celula[data-k]").forEach(b=>b.addEventListener("click",()=>{
+    selecionada = selecionada===b.dataset.k ? null : b.dataset.k; desenharMatriz(); desenharGrafico();
+    document.getElementById("titulo-graf").scrollIntoView({behavior:"smooth",block:"center"});
+  }));
+}
+
+/* ---------- gráfico ---------- */
+function series(){
+  if (selecionada && H.combos[selecionada]){
+    const c=H.combos[selecionada];
+    return [{nome:`${c.cidade}, ${diaCurto(c.data)}`, cor:"var(--ambar)", pts:c.leituras.map(l=>({t:+new Date(l.quando),p:l.preco_total,info:c.cidade}))}];
+  }
+  return cfg().datas.map((d,i)=>{
+    const cs=origensClasse().map(o=>combo(o.id,d)).filter(c=>c?.leituras?.length);
+    const porDia={};
+    for (const c of cs) for (const l of c.leituras){ const k=l.quando.slice(0,10);
+      if (!porDia[k] || l.preco_total<porDia[k].p) porDia[k]={t:+new Date(l.quando),p:l.preco_total,info:c.cidade}; }
+    return {id:d, nome:diaCurto(d), cor:COR_DIA[i%COR_DIA.length], pts:Object.keys(porDia).sort().map(k=>porDia[k])};
+  }).filter(s=>s.pts.length && visiveis.has(s.id));
+}
+function desenharChips(){
+  const box=document.getElementById("chips");
+  if (selecionada){
+    box.innerHTML=`<button class="chip" id="voltar">Voltar para o melhor de cada dia</button>`;
+    box.querySelector("#voltar").onclick=()=>{selecionada=null; desenharMatriz(); desenharGrafico();};
+    return;
+  }
+  box.innerHTML=cfg().datas.map((d,i)=>`<button class="chip" aria-pressed="${visiveis.has(d)}" data-d="${d}"><i style="background:${COR_DIA[i%COR_DIA.length]}"></i>${diaCurto(d)}</button>`).join("");
+  box.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{ const d=b.dataset.d;
+    if (visiveis.has(d)){ if(visiveis.size===1) return; visiveis.delete(d);} else visiveis.add(d); desenharGrafico(); });
+}
+function desenharGrafico(){
+  desenharChips();
+  const c=selecionada&&H.combos[selecionada];
+  const tg=document.getElementById("titulo-graf");
+  if (c){ const l=ult(c); tg.innerHTML=`${esc(c.cidade)} → Salvador em ${diaCurto(c.data)}, ${CLASSE_PT[classe].toLowerCase()} <a class="ver" style="margin-left:10px" href="${esc(linkGoogle(aeroDe({id:c.origem},l), c.data, classe))}" target="_blank" rel="noopener">Ver este voo</a>`; }
+  else tg.textContent=`Menor preço de cada data de viagem, ${CLASSE_PT[classe].toLowerCase()}`;
+  document.getElementById("sub-graf").textContent = c ? "Histórico de uma rota só, dia a dia." : "Cada linha é uma data de voo. O ponto de cada dia é o preço da rota mais barata naquela leitura, qualquer que seja a cidade. O círculo marca o menor já visto.";
+  const svg=document.getElementById("grafico"), W=Math.max(300,Math.round(svg.parentElement.clientWidth-36)), Ht=W<560?260:330, m={l:72,r:36,t:14,b:32};
+  svg.setAttribute("viewBox",`0 0 ${W} ${Ht}`);
+  const S=series(), todos=S.flatMap(s=>s.pts);
+  if (!todos.length){ svg.innerHTML=`<text x="${W/2}" y="${Ht/2}" text-anchor="middle">O gráfico aparece a partir da primeira leitura.</text>`; return; }
+  const ts=todos.map(p=>p.t), ps=todos.map(p=>p.p);
+  let x0=Math.min(...ts), x1=Math.max(...ts); if (x0===x1){x0-=864e5;x1+=864e5;}
+  let y0=Math.min(...ps), y1=Math.max(...ps); const pad=(y1-y0)*.12||300; y0-=pad; y1+=pad;
+  const X=t=>m.l+(t-x0)/(x1-x0)*(W-m.l-m.r), Y=p=>Ht-m.b-(p-y0)/(y1-y0)*(Ht-m.t-m.b);
+  let g="";
+  for (let i=0;i<=4;i++){ const v=y0+(y1-y0)*i/4; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--linha)"/><text x="${m.l-10}" y="${Y(v)+4}" text-anchor="end">${brl(v)}</text>`; }
+  const nx=Math.min(W<560?3:6,new Set(ts).size);
+  for (let i=0;i<nx;i++){ const t=x0+(x1-x0)*(nx===1?.5:i/(nx-1)); g+=`<text x="${X(t)}" y="${Ht-9}" text-anchor="middle">${dataCurta(new Date(t).toISOString())}</text>`; }
+  for (const s of S){
+    g+=`<path d="${s.pts.map((p,i)=>`${i?"L":"M"}${X(p.t).toFixed(1)},${Y(p.p).toFixed(1)}`).join("")}" fill="none" stroke="${s.cor}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>`;
+    const mn=s.pts.reduce((a,b)=>a.p<=b.p?a:b);
+    g+=`<circle cx="${X(mn.t)}" cy="${Y(mn.p)}" r="5.5" fill="var(--painel)" stroke="${s.cor}" stroke-width="2.4"/>`;
+  }
+  g+=`<line id="guia" y1="${m.t}" y2="${Ht-m.b}" stroke="var(--suave)" stroke-dasharray="3 4" visibility="hidden"/><rect id="area" x="${m.l}" y="${m.t}" width="${W-m.l-m.r}" height="${Ht-m.t-m.b}" fill="transparent"/>`;
+  svg.innerHTML=g;
+  const dica=document.getElementById("dica"), guia=svg.querySelector("#guia"), area=svg.querySelector("#area");
+  const mover=ev=>{
+    const p=ev.touches?ev.touches[0]:ev, box=svg.getBoundingClientRect();
+    const t=x0+((p.clientX-box.left)/box.width*W-m.l)/(W-m.l-m.r)*(x1-x0);
+    let xs=null, html="";
+    for (const s of S){ const q=s.pts.reduce((a,b)=>Math.abs(b.t-t)<Math.abs(a.t-t)?b:a); xs=xs??q.t;
+      html+=`<div><span style="color:${s.cor}">${esc(s.nome)}${selecionada?"":` · ${esc(q.info)}`}</span><b>${brl(q.p)}</b></div>`; }
+    guia.setAttribute("x1",X(xs)); guia.setAttribute("x2",X(xs)); guia.setAttribute("visibility","visible");
+    dica.innerHTML=`<div style="color:#8BA0B5">leitura de ${dataCurta(new Date(xs).toISOString())}</div>${html}`; dica.style.display="block";
+    dica.style.left=Math.min(p.clientX+14,innerWidth-dica.offsetWidth-8)+"px"; dica.style.top=(p.clientY+14)+"px";
+  };
+  const sair=()=>{dica.style.display="none"; guia.setAttribute("visibility","hidden");};
+  area.addEventListener("mousemove",mover); area.addEventListener("touchmove",mover,{passive:true});
+  area.addEventListener("mouseleave",sair); area.addEventListener("touchend",sair);
+}
+
+/* ---------- descoberta ---------- */
+function desenharDescoberta(){
+  const sec=document.getElementById("sec-desc"), el=document.getElementById("descoberta"), sub=document.getElementById("sub-desc"), D=H.descoberta;
+  if (!D){ sec.hidden=true; return; }
+  const datas=cfg().datas, res=(D.resultados||{})[classe]||{}, monit=new Set(((H.alternativas||{})[classe]||[]).map(a=>a.id));
+  const R=(D.referencia||{})[classe]||{}, ref={}; for (const d of datas) if (R[d]) ref[d]={p:R[d].preco,c:R[d].cidade};
+  const linhas=Object.entries(res).map(([id,r])=>{
+    const cel=datas.map(d=>{ const l=r.precos?.[d]; return (l && ref[d] && l.preco_total<ref[d].p) ? l : null; });
+    const vs=cel.map((l,i)=>l?ref[datas[i]].p-l.preco_total:null).filter(v=>v!=null);
+    return {id,r,cel,melhor:vs.length?Math.max(...vs):null};
+  }).filter(x=>x.melhor!=null).sort((a,b)=>b.melhor-a.melhor);
+  const qtd=Object.keys(res).length+((D.sem_resultado||{})[classe]||[]).length;
+  sec.hidden=false;
+  if (!linhas.length){
+    sub.textContent="";
+    el.innerHTML=`<p style="margin:0;color:var(--suave)">Varredura de ${dataCurta(D.quando)}: nenhuma das ${qtd} outras cidades da Europa tem voo mais barato que as 4 principais em ${CLASSE_PT[classe].toLowerCase()}. A próxima varredura é no ${esc(D.dia_da_semana||"domingo")}.</p>`;
+    return;
+  }
+  sub.textContent=`Varredura de ${dataCurta(D.quando)} em ${qtd} cidades, ${CLASSE_PT[classe].toLowerCase()}. Só aparecem as cidades com voo mais barato que a melhor das 4 principais, e só nas datas em que isso acontece. Toque no preço para abrir o voo. Valores do dia da varredura; o preço não inclui chegar até a cidade.`;
+  el.innerHTML=`<table class="desc"><thead><tr><th>Cidade</th>${datas.map(d=>`<th><span class="dl">${diaCurto(d)}</span><span class="dc">${d.slice(8,10)}/${d.slice(5,7)}</span></th>`).join("")}<th class="col-vg">Maior economia</th></tr></thead><tbody>
+    <tr class="ref"><td><span class="dl">Melhor das 4 principais no dia</span><span class="dc">Melhor principal</span></td>${datas.map(d=>`<td>${ref[d]?brl(ref[d].p).replace("R$ ",""):"—"}</td>`).join("")}<td class="col-vg"></td></tr>
+    ${linhas.map(({id,r,cel,melhor})=>`<tr><td>${esc(r.cidade)}${monit.has(id)?`<span class="tag-mon">todo dia</span>`:""}<span class="aer">${(r.aeroportos||[]).map(esc).join(", ")} → SSA</span></td>
+      ${cel.map((l,i)=>l?`<td class="bate"><a href="${esc(linkGoogle(aeroDe({id,aeroportos:r.aeroportos},l), datas[i], classe))}" target="_blank" rel="noopener" title="Abrir no Google Flights">${brl(l.preco_total).replace("R$ ","")}</a></td>`:`<td class="nd">—</td>`).join("")}
+      <td class="col-vg vg"><span class="caiu">${brl(melhor)} a menos</span></td></tr>`).join("")}
+  </tbody></table>`;
+}
+
+/* ---------- avisos e topo ---------- */
+function desenharAlertas(){
+  const lista=(H.alertas||[]).filter(a=>a.classe===classe).slice().reverse().slice(0,30);
+  document.getElementById("alertas").innerHTML = lista.length ? lista.map(a=>`<li><span class="quando">${dataCurta(a.quando)}</span>
+    <span><b>${esc(a.cidade)}</b> → Salvador em ${diaCurto(a.data)}: de ${brl(a.de)} para ${brl(a.para)}${a.tipo==="recorde"?`<span class="tag-rec">menor já visto</span>`:""}</span>
+    <span class="eco">−${brl(a.economia)}</span></li>`).join("")
+    : `<li style="display:block;color:var(--suave)">Nenhuma queda em ${CLASSE_PT[classe].toLowerCase()} ainda. Quando um preço baixar, ele aparece aqui e no seu celular.</li>`;
+}
+function desenharTopo(){
+  const c=cfg(), ds=c.datas;
+  document.getElementById("viagem").innerHTML = ds.length
+    ? `Só ida, <strong>${c.adultos} adultos</strong>, de ${c.origens.map(o=>esc(o.cidade)).join(", ").replace(/, ([^,]*)$/," e $1")} para Salvador, mais as alternativas que a varredura semanal encontrar. Voos entre <strong>${diaCurto(ds[0])}</strong> e <strong>${diaCurto(ds.at(-1))} de ${dia(ds[0]).getFullYear()}</strong>. Preços em reais, somados para todos.`
+    : "O painel aparece depois da primeira leitura.";
+  const e=H.execucoes?.at(-1), horas=H.atualizado_em?Math.round((Date.now()-new Date(H.atualizado_em))/36e5):null;
+  const mes=new Date().toISOString().slice(0,7), total=Object.keys(H.combos||{}).length;
+  document.getElementById("status").innerHTML=`
+    <span class="pilula ${(e&&e.ok===0)||horas>30?"ruim":""}"><span class="luz"></span>${H.atualizado_em?`Atualizado <b>${horas<1?"agora":`há ${horas} h`}</b>`:"Aguardando 1ª leitura"}</span>
+    ${e?`<span class="pilula">Última leitura <b>${e.ok}/${e.ok+e.falhas}</b> combinações</span>`:""}
+    <span class="pilula">Reserva SerpApi no mês <b>${H.uso_serpapi?.[mes]??0}/250</b></span>`;
+  document.getElementById("cab-info").textContent = H.atualizado_em?new Date(H.atualizado_em).toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"}):"";
+  const av=document.getElementById("aviso");
+  if (H.demo){ av.hidden=false; av.textContent="Dados de demonstração. Estes números são simulados só para mostrar o painel; os preços reais aparecem quando o robô rodar no seu GitHub."; }
+  else if (H.erro){ av.hidden=false; av.textContent="Não consegui ler o histórico ("+H.erro+"). Recarregue em alguns minutos."; }
+  else if (e && e.falhas>0){ av.hidden=false; av.textContent=`Na última busca, ${e.falhas} de ${e.ok+e.falhas} combinações não foram lidas; elas mostram o último valor conhecido. A reserva atualiza as mais antigas primeiro nos próximos dias.`; }
+  document.getElementById("rodape").textContent="Fonte: Google Flights, que reúne companhias aéreas e agências. Os valores são o menor total só de ida no momento da leitura e podem mudar até a hora da compra; sempre confirme no site antes de pagar.";
+}
+
+function tudo(){ desenharQuadro(); desenharMatriz(); desenharDescoberta(); desenharGrafico(); desenharAlertas(); }
+document.querySelectorAll(".classe button").forEach(b=>b.addEventListener("click",()=>{
+  classe=b.dataset.c; selecionada=null;
+  document.querySelectorAll(".classe button").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); tudo();
+}));
+carregar().then(h=>{ H=h; H.combos=H.combos||{};
+  if (!H.config){ const cs=Object.values(H.combos); H.config={destino:"SSA",adultos:2,datas:[...new Set(cs.map(c=>c.data))].sort(),origens:[...new Map(cs.map(c=>[c.origem,{id:c.origem,cidade:c.cidade}])).values()]}; }
+  cfg().datas.forEach(d=>visiveis.add(d));
+  let rz; addEventListener("resize",()=>{clearTimeout(rz); rz=setTimeout(desenharGrafico,150);});
+  desenharTopo(); tudo();
+});
+</script>
+</body>
+</html>
