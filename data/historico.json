@@ -367,6 +367,19 @@
           "opcoes": 8,
           "quando": "2026-10-26T17:10:16+00:00",
           "por_pessoa": 4470
+        },
+        {
+          "preco_total": 8729,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTUFEcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Aerolineas Argentinas",
+          "escalas": 1,
+          "duracao_min": 1045,
+          "saida": "20:05",
+          "opcoes": 8,
+          "quando": "2026-10-27T16:16:05+00:00",
+          "por_pessoa": 4364
         }
       ],
       "origem": "MAD",
@@ -752,6 +765,19 @@
           "opcoes": 9,
           "quando": "2026-10-26T17:10:20+00:00",
           "por_pessoa": 4988
+        },
+        {
+          "preco_total": 8848,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTElTcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Gol",
+          "escalas": 1,
+          "duracao_min": 720,
+          "saida": "23:40",
+          "opcoes": 8,
+          "quando": "2026-10-27T16:16:09+00:00",
+          "por_pessoa": 4424
         }
       ],
       "origem": "LIS",
@@ -1145,6 +1171,21 @@
           "faixa_tipica": null,
           "quando": "2026-10-26T17:13:14+00:00",
           "por_pessoa": 4528
+        },
+        {
+          "preco_total": 8844,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDQkNOcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Air France",
+          "escalas": 1,
+          "duracao_min": 845,
+          "saida": "06:10",
+          "opcoes": 9,
+          "nivel": null,
+          "faixa_tipica": null,
+          "quando": "2026-10-27T16:19:06+00:00",
+          "por_pessoa": 4422
         }
       ],
       "origem": "BCN",
@@ -1520,6 +1561,19 @@
           "opcoes": 9,
           "quando": "2026-10-26T17:10:34+00:00",
           "por_pessoa": 4762
+        },
+        {
+          "preco_total": 9301,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDT1JZcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "12:00",
+          "opcoes": 10,
+          "quando": "2026-10-27T16:16:23+00:00",
+          "por_pessoa": 4650
         }
       ],
       "origem": "PAR",
@@ -1895,6 +1949,19 @@
           "opcoes": 7,
           "quando": "2026-10-26T17:10:38+00:00",
           "por_pessoa": 4050
+        },
+        {
+          "preco_total": 7910,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTUFEcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "16:20",
+          "opcoes": 7,
+          "quando": "2026-10-27T16:16:28+00:00",
+          "por_pessoa": 3955
         }
       ],
       "origem": "MAD",
@@ -2278,6 +2345,19 @@
           "opcoes": 5,
           "quando": "2026-10-26T17:10:43+00:00",
           "por_pessoa": 5001
+        },
+        {
+          "preco_total": 9767,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTElTcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Tap Air Portugal + Gol",
+          "escalas": 1,
+          "duracao_min": 565,
+          "saida": "17:45",
+          "opcoes": 5,
+          "quando": "2026-10-27T16:16:32+00:00",
+          "por_pessoa": 4884
         }
       ],
       "origem": "LIS",
@@ -2719,6 +2799,24 @@
           ],
           "quando": "2026-10-26T17:13:17+00:00",
           "por_pessoa": 4136
+        },
+        {
+          "preco_total": 8503,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDQkNOcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 1705,
+          "saida": "22:40",
+          "opcoes": 12,
+          "nivel": "low",
+          "faixa_tipica": [
+            9200,
+            11500
+          ],
+          "quando": "2026-10-27T16:19:09+00:00",
+          "por_pessoa": 4252
         }
       ],
       "origem": "BCN",
@@ -3084,6 +3182,19 @@
           "opcoes": 10,
           "quando": "2026-10-26T17:10:56+00:00",
           "por_pessoa": 4762
+        },
+        {
+          "preco_total": 9301,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDT1JZcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "12:00",
+          "opcoes": 9,
+          "quando": "2026-10-27T16:16:46+00:00",
+          "por_pessoa": 4650
         }
       ],
       "origem": "PAR",
@@ -3454,6 +3565,19 @@
           "opcoes": 10,
           "quando": "2026-10-26T17:11:01+00:00",
           "por_pessoa": 4306
+        },
+        {
+          "preco_total": 8410,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTUFEcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 10,
+          "quando": "2026-10-27T16:16:50+00:00",
+          "por_pessoa": 4205
         }
       ],
       "origem": "MAD",
@@ -3824,6 +3948,19 @@
           "opcoes": 5,
           "quando": "2026-10-26T17:11:05+00:00",
           "por_pessoa": 3910
+        },
+        {
+          "preco_total": 7636,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTElTcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "LATAM",
+          "escalas": 2,
+          "duracao_min": 830,
+          "saida": "19:20",
+          "opcoes": 5,
+          "quando": "2026-10-27T16:16:55+00:00",
+          "por_pessoa": 3818
         }
       ],
       "origem": "LIS",
@@ -4265,6 +4402,24 @@
           ],
           "quando": "2026-10-26T17:13:21+00:00",
           "por_pessoa": 4098
+        },
+        {
+          "preco_total": 8003,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDQkNOcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 940,
+          "saida": "11:25",
+          "opcoes": 12,
+          "nivel": "low",
+          "faixa_tipica": [
+            9200,
+            11500
+          ],
+          "quando": "2026-10-27T16:19:13+00:00",
+          "por_pessoa": 4002
         }
       ],
       "origem": "BCN",
@@ -4643,6 +4798,19 @@
           "opcoes": 11,
           "quando": "2026-10-26T17:11:19+00:00",
           "por_pessoa": 4762
+        },
+        {
+          "preco_total": 9301,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDT1JZcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "14:40",
+          "opcoes": 11,
+          "quando": "2026-10-27T16:17:08+00:00",
+          "por_pessoa": 4650
         }
       ],
       "origem": "PAR",
@@ -5003,6 +5171,19 @@
           "opcoes": 6,
           "quando": "2026-10-26T17:11:23+00:00",
           "por_pessoa": 4050
+        },
+        {
+          "preco_total": 7910,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTUFEcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 6,
+          "quando": "2026-10-27T16:17:13+00:00",
+          "por_pessoa": 3955
         }
       ],
       "origem": "MAD",
@@ -5381,6 +5562,19 @@
           "opcoes": 6,
           "quando": "2026-10-26T17:11:27+00:00",
           "por_pessoa": 3910
+        },
+        {
+          "preco_total": 7636,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTElTcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "LATAM",
+          "escalas": 2,
+          "duracao_min": 860,
+          "saida": "18:35",
+          "opcoes": 6,
+          "quando": "2026-10-27T16:17:17+00:00",
+          "por_pessoa": 3818
         }
       ],
       "origem": "LIS",
@@ -5817,6 +6011,24 @@
           ],
           "quando": "2026-10-26T17:13:23+00:00",
           "por_pessoa": 4528
+        },
+        {
+          "preco_total": 8077,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDQkNOcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 1845,
+          "saida": "20:20",
+          "opcoes": 12,
+          "nivel": "low",
+          "faixa_tipica": [
+            9200,
+            11500
+          ],
+          "quando": "2026-10-27T16:19:16+00:00",
+          "por_pessoa": 4038
         }
       ],
       "origem": "BCN",
@@ -6195,6 +6407,19 @@
           "opcoes": 8,
           "quando": "2026-10-26T17:11:41+00:00",
           "por_pessoa": 4986
+        },
+        {
+          "preco_total": 10863,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDT1JZcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal + Azul",
+          "escalas": 2,
+          "duracao_min": 705,
+          "saida": "19:45",
+          "opcoes": 7,
+          "quando": "2026-10-27T16:17:31+00:00",
+          "por_pessoa": 5432
         }
       ],
       "origem": "PAR",
@@ -6578,6 +6803,19 @@
           "opcoes": 7,
           "quando": "2026-10-26T17:11:45+00:00",
           "por_pessoa": 13100
+        },
+        {
+          "preco_total": 25584,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTUFEcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal + LATAM",
+          "escalas": 2,
+          "duracao_min": 650,
+          "saida": "13:40",
+          "opcoes": 8,
+          "quando": "2026-10-27T16:17:35+00:00",
+          "por_pessoa": 12792
         }
       ],
       "origem": "MAD",
@@ -6961,6 +7199,19 @@
           "opcoes": 14,
           "quando": "2026-10-26T17:11:50+00:00",
           "por_pessoa": 15237
+        },
+        {
+          "preco_total": 29757,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTElTcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Air Europa + LATAM",
+          "escalas": 2,
+          "duracao_min": 845,
+          "saida": "20:05",
+          "opcoes": 14,
+          "quando": "2026-10-27T16:17:40+00:00",
+          "por_pessoa": 14878
         }
       ],
       "origem": "LIS",
@@ -7397,6 +7648,24 @@
           ],
           "quando": "2026-10-26T17:13:27+00:00",
           "por_pessoa": 10611
+        },
+        {
+          "preco_total": 20722,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDQkNOcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 1705,
+          "saida": "22:40",
+          "opcoes": 5,
+          "nivel": "typical",
+          "faixa_tipica": [
+            20500,
+            24500
+          ],
+          "quando": "2026-10-27T16:19:20+00:00",
+          "por_pessoa": 10361
         }
       ],
       "origem": "BCN",
@@ -7785,6 +8054,19 @@
           "opcoes": 11,
           "quando": "2026-10-26T17:12:03+00:00",
           "por_pessoa": 12200
+        },
+        {
+          "preco_total": 23826,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDT1JZcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Air Europa + Gol",
+          "escalas": 2,
+          "duracao_min": 890,
+          "saida": "19:25",
+          "opcoes": 11,
+          "quando": "2026-10-27T16:17:53+00:00",
+          "por_pessoa": 11913
         }
       ],
       "origem": "PAR",
@@ -8158,6 +8440,19 @@
           "opcoes": 11,
           "quando": "2026-10-26T17:12:08+00:00",
           "por_pessoa": 10539
+        },
+        {
+          "preco_total": 20582,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTUFEcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 9,
+          "quando": "2026-10-27T16:17:58+00:00",
+          "por_pessoa": 10291
         }
       ],
       "origem": "MAD",
@@ -8536,6 +8831,19 @@
           "opcoes": 5,
           "quando": "2026-10-26T17:12:12+00:00",
           "por_pessoa": 15237
+        },
+        {
+          "preco_total": 29082,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTElTcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Tap Air Portugal",
+          "escalas": 0,
+          "duracao_min": 525,
+          "saida": "17:20",
+          "opcoes": 15,
+          "quando": "2026-10-27T16:18:03+00:00",
+          "por_pessoa": 14541
         }
       ],
       "origem": "LIS",
@@ -8972,6 +9280,24 @@
           ],
           "quando": "2026-10-26T17:13:37+00:00",
           "por_pessoa": 12439
+        },
+        {
+          "preco_total": 20722,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDQkNOcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 1705,
+          "saida": "22:40",
+          "opcoes": 14,
+          "nivel": "typical",
+          "faixa_tipica": [
+            20500,
+            24500
+          ],
+          "quando": "2026-10-27T16:19:23+00:00",
+          "por_pessoa": 10361
         }
       ],
       "origem": "BCN",
@@ -9355,6 +9681,19 @@
           "opcoes": 9,
           "quando": "2026-10-26T17:12:26+00:00",
           "por_pessoa": 14027
+        },
+        {
+          "preco_total": 27394,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDT1JZcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "14:40",
+          "opcoes": 9,
+          "quando": "2026-10-27T16:18:16+00:00",
+          "por_pessoa": 13697
         }
       ],
       "origem": "PAR",
@@ -9738,6 +10077,19 @@
           "opcoes": 9,
           "quando": "2026-10-26T17:12:30+00:00",
           "por_pessoa": 10539
+        },
+        {
+          "preco_total": 20582,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTUFEcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 9,
+          "quando": "2026-10-27T16:18:21+00:00",
+          "por_pessoa": 10291
         }
       ],
       "origem": "MAD",
@@ -10085,6 +10437,19 @@
           "opcoes": 6,
           "quando": "2026-10-26T17:12:35+00:00",
           "por_pessoa": 12861
+        },
+        {
+          "preco_total": 25116,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTElTcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Air Europa + Gol",
+          "escalas": 2,
+          "duracao_min": 845,
+          "saida": "16:05",
+          "opcoes": 6,
+          "quando": "2026-10-27T16:18:26+00:00",
+          "por_pessoa": 12558
         }
       ],
       "origem": "LIS",
@@ -10521,6 +10886,24 @@
           ],
           "quando": "2026-10-26T17:13:42+00:00",
           "por_pessoa": 10611
+        },
+        {
+          "preco_total": 20722,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDQkNOcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 940,
+          "saida": "11:25",
+          "opcoes": 11,
+          "nivel": "typical",
+          "faixa_tipica": [
+            20500,
+            24500
+          ],
+          "quando": "2026-10-27T16:19:27+00:00",
+          "por_pessoa": 10361
         }
       ],
       "origem": "BCN",
@@ -10904,6 +11287,19 @@
           "opcoes": 8,
           "quando": "2026-10-26T17:12:48+00:00",
           "por_pessoa": 12200
+        },
+        {
+          "preco_total": 23826,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDT1JZcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Air Europa + Gol",
+          "escalas": 2,
+          "duracao_min": 890,
+          "saida": "19:25",
+          "opcoes": 8,
+          "quando": "2026-10-27T16:18:39+00:00",
+          "por_pessoa": 11913
         }
       ],
       "origem": "PAR",
@@ -11279,6 +11675,19 @@
           "opcoes": 8,
           "quando": "2026-10-26T17:12:52+00:00",
           "por_pessoa": 10539
+        },
+        {
+          "preco_total": 20582,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTUFEcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 9,
+          "quando": "2026-10-27T16:18:44+00:00",
+          "por_pessoa": 10291
         }
       ],
       "origem": "MAD",
@@ -11644,6 +12053,19 @@
           "opcoes": 6,
           "quando": "2026-10-26T17:12:57+00:00",
           "por_pessoa": 15555
+        },
+        {
+          "preco_total": 30377,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTElTcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Tap Air Portugal + Gol",
+          "escalas": 1,
+          "duracao_min": 625,
+          "saida": "19:05",
+          "opcoes": 6,
+          "quando": "2026-10-27T16:18:48+00:00",
+          "por_pessoa": 15188
         }
       ],
       "origem": "LIS",
@@ -12080,6 +12502,24 @@
           ],
           "quando": "2026-10-26T17:13:45+00:00",
           "por_pessoa": 10611
+        },
+        {
+          "preco_total": 20722,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDQkNOcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 940,
+          "saida": "11:25",
+          "opcoes": 17,
+          "nivel": "typical",
+          "faixa_tipica": [
+            20500,
+            24500
+          ],
+          "quando": "2026-10-27T16:19:32+00:00",
+          "por_pessoa": 10361
         }
       ],
       "origem": "BCN",
@@ -12445,6 +12885,19 @@
           "opcoes": 7,
           "quando": "2026-10-26T17:13:10+00:00",
           "por_pessoa": 14027
+        },
+        {
+          "preco_total": 27394,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDT1JZcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "14:40",
+          "opcoes": 7,
+          "quando": "2026-10-27T16:19:01+00:00",
+          "por_pessoa": 13697
         }
       ],
       "origem": "PAR",
@@ -12468,336 +12921,6 @@
     }
   },
   "alertas": [
-    {
-      "de": 6925,
-      "para": 6918,
-      "economia": 7,
-      "tipo": "recorde",
-      "combo": "LIS-SSA|2027-07-06|economy",
-      "cidade": "Lisboa",
-      "data": "2027-07-06",
-      "classe": "economy",
-      "quando": "2026-10-06T17:05:36+00:00"
-    },
-    {
-      "de": 9180,
-      "para": 9171,
-      "economia": 9,
-      "tipo": "recorde",
-      "combo": "PAR-SSA|2027-07-06|economy",
-      "cidade": "Paris",
-      "data": "2027-07-06",
-      "classe": "economy",
-      "quando": "2026-10-06T17:05:49+00:00"
-    },
-    {
-      "de": 23933,
-      "para": 23910,
-      "economia": 23,
-      "tipo": "recorde",
-      "combo": "MAD-SSA|2027-07-03|business",
-      "cidade": "Madrid",
-      "data": "2027-07-03",
-      "classe": "business",
-      "quando": "2026-10-06T17:05:54+00:00"
-    },
-    {
-      "de": 28046,
-      "para": 28019,
-      "economia": 27,
-      "tipo": "recorde",
-      "combo": "LIS-SSA|2027-07-03|business",
-      "cidade": "Lisboa",
-      "data": "2027-07-03",
-      "classe": "business",
-      "quando": "2026-10-06T17:05:59+00:00"
-    },
-    {
-      "de": 22456,
-      "para": 22434,
-      "economia": 22,
-      "tipo": "recorde",
-      "combo": "PAR-SSA|2027-07-03|business",
-      "cidade": "Paris",
-      "data": "2027-07-03",
-      "classe": "business",
-      "quando": "2026-10-06T17:06:12+00:00"
-    },
-    {
-      "de": 19401,
-      "para": 19382,
-      "economia": 19,
-      "tipo": "recorde",
-      "combo": "MAD-SSA|2027-07-04|business",
-      "cidade": "Madrid",
-      "data": "2027-07-04",
-      "classe": "business",
-      "quando": "2026-10-06T17:06:16+00:00"
-    },
-    {
-      "de": 28046,
-      "para": 28019,
-      "economia": 27,
-      "tipo": "queda",
-      "combo": "LIS-SSA|2027-07-04|business",
-      "cidade": "Lisboa",
-      "data": "2027-07-04",
-      "classe": "business",
-      "quando": "2026-10-06T17:06:21+00:00"
-    },
-    {
-      "de": 22456,
-      "para": 22434,
-      "economia": 22,
-      "tipo": "recorde",
-      "combo": "PAR-SSA|2027-07-04|business",
-      "cidade": "Paris",
-      "data": "2027-07-04",
-      "classe": "business",
-      "quando": "2026-10-06T17:06:34+00:00"
-    },
-    {
-      "de": 24111,
-      "para": 24088,
-      "economia": 23,
-      "tipo": "recorde",
-      "combo": "MAD-SSA|2027-07-05|business",
-      "cidade": "Madrid",
-      "data": "2027-07-05",
-      "classe": "business",
-      "quando": "2026-10-06T17:06:39+00:00"
-    },
-    {
-      "de": 23672,
-      "para": 23649,
-      "economia": 23,
-      "tipo": "recorde",
-      "combo": "LIS-SSA|2027-07-05|business",
-      "cidade": "Lisboa",
-      "data": "2027-07-05",
-      "classe": "business",
-      "quando": "2026-10-06T17:06:43+00:00"
-    },
-    {
-      "de": 22456,
-      "para": 22434,
-      "economia": 22,
-      "tipo": "recorde",
-      "combo": "PAR-SSA|2027-07-05|business",
-      "cidade": "Paris",
-      "data": "2027-07-05",
-      "classe": "business",
-      "quando": "2026-10-06T17:06:56+00:00"
-    },
-    {
-      "de": 19401,
-      "para": 19382,
-      "economia": 19,
-      "tipo": "recorde",
-      "combo": "MAD-SSA|2027-07-06|business",
-      "cidade": "Madrid",
-      "data": "2027-07-06",
-      "classe": "business",
-      "quando": "2026-10-06T17:07:01+00:00"
-    },
-    {
-      "de": 23672,
-      "para": 23649,
-      "economia": 23,
-      "tipo": "recorde",
-      "combo": "LIS-SSA|2027-07-06|business",
-      "cidade": "Lisboa",
-      "data": "2027-07-06",
-      "classe": "business",
-      "quando": "2026-10-06T17:07:05+00:00"
-    },
-    {
-      "de": 24012,
-      "para": 23989,
-      "economia": 23,
-      "tipo": "queda",
-      "combo": "PAR-SSA|2027-07-06|business",
-      "cidade": "Paris",
-      "data": "2027-07-06",
-      "classe": "business",
-      "quando": "2026-10-06T17:07:18+00:00"
-    },
-    {
-      "de": 19533,
-      "para": 19514,
-      "economia": 19,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-06|business",
-      "cidade": "Barcelona",
-      "data": "2027-07-06",
-      "classe": "business",
-      "quando": "2026-10-06T17:07:24+00:00"
-    },
-    {
-      "de": 8101,
-      "para": 8093,
-      "economia": 8,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-03|economy",
-      "cidade": "Barcelona",
-      "data": "2027-07-03",
-      "classe": "economy",
-      "quando": "2026-10-06T17:07:28+00:00"
-    },
-    {
-      "de": 7614,
-      "para": 7606,
-      "economia": 8,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-04|economy",
-      "cidade": "Barcelona",
-      "data": "2027-07-04",
-      "classe": "economy",
-      "quando": "2026-10-06T17:07:33+00:00"
-    },
-    {
-      "de": 7544,
-      "para": 7537,
-      "economia": 7,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-05|economy",
-      "cidade": "Barcelona",
-      "data": "2027-07-05",
-      "classe": "economy",
-      "quando": "2026-10-06T17:07:40+00:00"
-    },
-    {
-      "de": 7544,
-      "para": 7537,
-      "economia": 7,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-06|economy",
-      "cidade": "Barcelona",
-      "data": "2027-07-06",
-      "classe": "economy",
-      "quando": "2026-10-06T17:07:45+00:00"
-    },
-    {
-      "de": 19533,
-      "para": 19514,
-      "economia": 19,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-03|business",
-      "cidade": "Barcelona",
-      "data": "2027-07-03",
-      "classe": "business",
-      "quando": "2026-10-06T17:07:49+00:00"
-    },
-    {
-      "de": 19533,
-      "para": 19514,
-      "economia": 19,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-04|business",
-      "cidade": "Barcelona",
-      "data": "2027-07-04",
-      "classe": "business",
-      "quando": "2026-10-06T17:07:53+00:00"
-    },
-    {
-      "de": 19533,
-      "para": 19514,
-      "economia": 19,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-05|business",
-      "cidade": "Barcelona",
-      "data": "2027-07-05",
-      "classe": "business",
-      "quando": "2026-10-06T17:08:00+00:00"
-    },
-    {
-      "de": 8220,
-      "para": 8202,
-      "economia": 18,
-      "tipo": "recorde",
-      "combo": "MAD-SSA|2027-07-03|economy",
-      "cidade": "Madrid",
-      "data": "2027-07-03",
-      "classe": "economy",
-      "quando": "2026-10-07T17:42:29+00:00"
-    },
-    {
-      "de": 9171,
-      "para": 9150,
-      "economia": 21,
-      "tipo": "recorde",
-      "combo": "LIS-SSA|2027-07-03|economy",
-      "cidade": "Lisboa",
-      "data": "2027-07-03",
-      "classe": "economy",
-      "quando": "2026-10-07T17:42:33+00:00"
-    },
-    {
-      "de": 9171,
-      "para": 8740,
-      "economia": 431,
-      "tipo": "recorde",
-      "combo": "PAR-SSA|2027-07-03|economy",
-      "cidade": "Paris",
-      "data": "2027-07-03",
-      "classe": "economy",
-      "quando": "2026-10-07T17:42:46+00:00"
-    },
-    {
-      "de": 7920,
-      "para": 7902,
-      "economia": 18,
-      "tipo": "recorde",
-      "combo": "MAD-SSA|2027-07-04|economy",
-      "cidade": "Madrid",
-      "data": "2027-07-04",
-      "classe": "economy",
-      "quando": "2026-10-07T17:42:50+00:00"
-    },
-    {
-      "de": 10337,
-      "para": 10314,
-      "economia": 23,
-      "tipo": "recorde",
-      "combo": "LIS-SSA|2027-07-04|economy",
-      "cidade": "Lisboa",
-      "data": "2027-07-04",
-      "classe": "economy",
-      "quando": "2026-10-07T17:42:55+00:00"
-    },
-    {
-      "de": 9171,
-      "para": 9151,
-      "economia": 20,
-      "tipo": "recorde",
-      "combo": "PAR-SSA|2027-07-04|economy",
-      "cidade": "Paris",
-      "data": "2027-07-04",
-      "classe": "economy",
-      "quando": "2026-10-07T17:43:08+00:00"
-    },
-    {
-      "de": 9061,
-      "para": 9045,
-      "economia": 16,
-      "tipo": "queda",
-      "combo": "MAD-SSA|2027-07-05|economy",
-      "cidade": "Madrid",
-      "data": "2027-07-05",
-      "classe": "economy",
-      "quando": "2026-10-07T17:43:12+00:00"
-    },
-    {
-      "de": 8196,
-      "para": 8178,
-      "economia": 18,
-      "tipo": "recorde",
-      "combo": "LIS-SSA|2027-07-05|economy",
-      "cidade": "Lisboa",
-      "data": "2027-07-05",
-      "classe": "economy",
-      "quando": "2026-10-07T17:43:16+00:00"
-    },
     {
       "de": 9171,
       "para": 8740,
@@ -15767,6 +15890,336 @@
       "data": "2027-07-06",
       "classe": "business",
       "quando": "2026-10-25T14:57:25+00:00"
+    },
+    {
+      "de": 8939,
+      "para": 8729,
+      "economia": 210,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-03|economy",
+      "cidade": "Madrid",
+      "data": "2027-07-03",
+      "classe": "economy",
+      "quando": "2026-10-27T16:16:05+00:00"
+    },
+    {
+      "de": 9977,
+      "para": 8848,
+      "economia": 1129,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-03|economy",
+      "cidade": "Lisboa",
+      "data": "2027-07-03",
+      "classe": "economy",
+      "quando": "2026-10-27T16:16:09+00:00"
+    },
+    {
+      "de": 9525,
+      "para": 9301,
+      "economia": 224,
+      "tipo": "queda",
+      "combo": "PAR-SSA|2027-07-03|economy",
+      "cidade": "Paris",
+      "data": "2027-07-03",
+      "classe": "economy",
+      "quando": "2026-10-27T16:16:23+00:00"
+    },
+    {
+      "de": 8101,
+      "para": 7910,
+      "economia": 191,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-04|economy",
+      "cidade": "Madrid",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "quando": "2026-10-27T16:16:28+00:00"
+    },
+    {
+      "de": 10002,
+      "para": 9767,
+      "economia": 235,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-04|economy",
+      "cidade": "Lisboa",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "quando": "2026-10-27T16:16:32+00:00"
+    },
+    {
+      "de": 9525,
+      "para": 9301,
+      "economia": 224,
+      "tipo": "queda",
+      "combo": "PAR-SSA|2027-07-04|economy",
+      "cidade": "Paris",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "quando": "2026-10-27T16:16:46+00:00"
+    },
+    {
+      "de": 8613,
+      "para": 8410,
+      "economia": 203,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-05|economy",
+      "cidade": "Madrid",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "quando": "2026-10-27T16:16:50+00:00"
+    },
+    {
+      "de": 7820,
+      "para": 7636,
+      "economia": 184,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-05|economy",
+      "cidade": "Lisboa",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "quando": "2026-10-27T16:16:55+00:00"
+    },
+    {
+      "de": 9525,
+      "para": 9301,
+      "economia": 224,
+      "tipo": "queda",
+      "combo": "PAR-SSA|2027-07-05|economy",
+      "cidade": "Paris",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "quando": "2026-10-27T16:17:08+00:00"
+    },
+    {
+      "de": 8101,
+      "para": 7910,
+      "economia": 191,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-06|economy",
+      "cidade": "Madrid",
+      "data": "2027-07-06",
+      "classe": "economy",
+      "quando": "2026-10-27T16:17:13+00:00"
+    },
+    {
+      "de": 7820,
+      "para": 7636,
+      "economia": 184,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-06|economy",
+      "cidade": "Lisboa",
+      "data": "2027-07-06",
+      "classe": "economy",
+      "quando": "2026-10-27T16:17:17+00:00"
+    },
+    {
+      "de": 26201,
+      "para": 25584,
+      "economia": 617,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-03|business",
+      "cidade": "Madrid",
+      "data": "2027-07-03",
+      "classe": "business",
+      "quando": "2026-10-27T16:17:35+00:00"
+    },
+    {
+      "de": 30474,
+      "para": 29757,
+      "economia": 717,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-03|business",
+      "cidade": "Lisboa",
+      "data": "2027-07-03",
+      "classe": "business",
+      "quando": "2026-10-27T16:17:40+00:00"
+    },
+    {
+      "de": 24400,
+      "para": 23826,
+      "economia": 574,
+      "tipo": "queda",
+      "combo": "PAR-SSA|2027-07-03|business",
+      "cidade": "Paris",
+      "data": "2027-07-03",
+      "classe": "business",
+      "quando": "2026-10-27T16:17:53+00:00"
+    },
+    {
+      "de": 21078,
+      "para": 20582,
+      "economia": 496,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-04|business",
+      "cidade": "Madrid",
+      "data": "2027-07-04",
+      "classe": "business",
+      "quando": "2026-10-27T16:17:58+00:00"
+    },
+    {
+      "de": 30474,
+      "para": 29082,
+      "economia": 1392,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-04|business",
+      "cidade": "Lisboa",
+      "data": "2027-07-04",
+      "classe": "business",
+      "quando": "2026-10-27T16:18:03+00:00"
+    },
+    {
+      "de": 28054,
+      "para": 27394,
+      "economia": 660,
+      "tipo": "queda",
+      "combo": "PAR-SSA|2027-07-04|business",
+      "cidade": "Paris",
+      "data": "2027-07-04",
+      "classe": "business",
+      "quando": "2026-10-27T16:18:16+00:00"
+    },
+    {
+      "de": 21078,
+      "para": 20582,
+      "economia": 496,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-05|business",
+      "cidade": "Madrid",
+      "data": "2027-07-05",
+      "classe": "business",
+      "quando": "2026-10-27T16:18:21+00:00"
+    },
+    {
+      "de": 25722,
+      "para": 25116,
+      "economia": 606,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-05|business",
+      "cidade": "Lisboa",
+      "data": "2027-07-05",
+      "classe": "business",
+      "quando": "2026-10-27T16:18:26+00:00"
+    },
+    {
+      "de": 24400,
+      "para": 23826,
+      "economia": 574,
+      "tipo": "queda",
+      "combo": "PAR-SSA|2027-07-05|business",
+      "cidade": "Paris",
+      "data": "2027-07-05",
+      "classe": "business",
+      "quando": "2026-10-27T16:18:39+00:00"
+    },
+    {
+      "de": 21078,
+      "para": 20582,
+      "economia": 496,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-06|business",
+      "cidade": "Madrid",
+      "data": "2027-07-06",
+      "classe": "business",
+      "quando": "2026-10-27T16:18:44+00:00"
+    },
+    {
+      "de": 31110,
+      "para": 30377,
+      "economia": 733,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-06|business",
+      "cidade": "Lisboa",
+      "data": "2027-07-06",
+      "classe": "business",
+      "quando": "2026-10-27T16:18:48+00:00"
+    },
+    {
+      "de": 28054,
+      "para": 27394,
+      "economia": 660,
+      "tipo": "queda",
+      "combo": "PAR-SSA|2027-07-06|business",
+      "cidade": "Paris",
+      "data": "2027-07-06",
+      "classe": "business",
+      "quando": "2026-10-27T16:19:01+00:00"
+    },
+    {
+      "de": 9057,
+      "para": 8844,
+      "economia": 213,
+      "tipo": "queda",
+      "combo": "BCN-SSA|2027-07-03|economy",
+      "cidade": "Barcelona",
+      "data": "2027-07-03",
+      "classe": "economy",
+      "quando": "2026-10-27T16:19:06+00:00"
+    },
+    {
+      "de": 8196,
+      "para": 8003,
+      "economia": 193,
+      "tipo": "queda",
+      "combo": "BCN-SSA|2027-07-05|economy",
+      "cidade": "Barcelona",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "quando": "2026-10-27T16:19:13+00:00"
+    },
+    {
+      "de": 9057,
+      "para": 8077,
+      "economia": 980,
+      "tipo": "queda",
+      "combo": "BCN-SSA|2027-07-06|economy",
+      "cidade": "Barcelona",
+      "data": "2027-07-06",
+      "classe": "economy",
+      "quando": "2026-10-27T16:19:16+00:00"
+    },
+    {
+      "de": 21222,
+      "para": 20722,
+      "economia": 500,
+      "tipo": "queda",
+      "combo": "BCN-SSA|2027-07-03|business",
+      "cidade": "Barcelona",
+      "data": "2027-07-03",
+      "classe": "business",
+      "quando": "2026-10-27T16:19:20+00:00"
+    },
+    {
+      "de": 24878,
+      "para": 20722,
+      "economia": 4156,
+      "tipo": "queda",
+      "combo": "BCN-SSA|2027-07-04|business",
+      "cidade": "Barcelona",
+      "data": "2027-07-04",
+      "classe": "business",
+      "quando": "2026-10-27T16:19:23+00:00"
+    },
+    {
+      "de": 21222,
+      "para": 20722,
+      "economia": 500,
+      "tipo": "queda",
+      "combo": "BCN-SSA|2027-07-05|business",
+      "cidade": "Barcelona",
+      "data": "2027-07-05",
+      "classe": "business",
+      "quando": "2026-10-27T16:19:27+00:00"
+    },
+    {
+      "de": 21222,
+      "para": 20722,
+      "economia": 500,
+      "tipo": "queda",
+      "combo": "BCN-SSA|2027-07-06|business",
+      "cidade": "Barcelona",
+      "data": "2027-07-06",
+      "classe": "business",
+      "quando": "2026-10-27T16:19:32+00:00"
     }
   ],
   "execucoes": [
@@ -16099,10 +16552,17 @@
       "falhas": 0,
       "via_serpapi": 8,
       "detalhes": []
+    },
+    {
+      "quando": "2026-10-27T16:16:04+00:00",
+      "ok": 32,
+      "falhas": 0,
+      "via_serpapi": 8,
+      "detalhes": []
     }
   ],
   "uso_serpapi": {
-    "2026-10": 224
+    "2026-10": 232
   },
   "config": {
     "destino": "SSA",
@@ -16476,5 +16936,5 @@
     },
     "dia_da_semana": "domingo"
   },
-  "atualizado_em": "2026-10-26T17:13:45+00:00"
+  "atualizado_em": "2026-10-27T16:19:32+00:00"
 }
