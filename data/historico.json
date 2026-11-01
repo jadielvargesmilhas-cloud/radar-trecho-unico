@@ -432,6 +432,19 @@
           "opcoes": 8,
           "quando": "2026-10-31T15:58:37+00:00",
           "por_pessoa": 4470
+        },
+        {
+          "preco_total": 8947,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTUFEcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Aerolineas Argentinas",
+          "escalas": 1,
+          "duracao_min": 1045,
+          "saida": "20:05",
+          "opcoes": 8,
+          "quando": "2026-11-01T17:02:04+00:00",
+          "por_pessoa": 4474
         }
       ],
       "origem": "MAD",
@@ -882,6 +895,19 @@
           "opcoes": 9,
           "quando": "2026-10-31T15:58:41+00:00",
           "por_pessoa": 4528
+        },
+        {
+          "preco_total": 9308,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTElTcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Gol",
+          "escalas": 1,
+          "duracao_min": 720,
+          "saida": "23:40",
+          "opcoes": 11,
+          "quando": "2026-11-01T17:02:08+00:00",
+          "por_pessoa": 4654
         }
       ],
       "origem": "LIS",
@@ -1305,6 +1331,21 @@
           "faixa_tipica": null,
           "quando": "2026-10-28T17:05:19+00:00",
           "por_pessoa": 4446
+        },
+        {
+          "preco_total": 9064,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDQkNOcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Air France",
+          "escalas": 1,
+          "duracao_min": 845,
+          "saida": "06:10",
+          "opcoes": 10,
+          "nivel": null,
+          "faixa_tipica": null,
+          "quando": "2026-11-01T17:05:11+00:00",
+          "por_pessoa": 4532
         }
       ],
       "origem": "BCN",
@@ -1745,6 +1786,19 @@
           "opcoes": 9,
           "quando": "2026-10-31T15:58:54+00:00",
           "por_pessoa": 5148
+        },
+        {
+          "preco_total": 10304,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDT1JZcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Air Europa",
+          "escalas": 1,
+          "duracao_min": 655,
+          "saida": "10:55",
+          "opcoes": 10,
+          "quando": "2026-11-01T17:02:21+00:00",
+          "por_pessoa": 5152
         }
       ],
       "origem": "PAR",
@@ -2185,6 +2239,19 @@
           "opcoes": 7,
           "quando": "2026-10-31T15:58:59+00:00",
           "por_pessoa": 4050
+        },
+        {
+          "preco_total": 8108,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTUFEcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "16:20",
+          "opcoes": 7,
+          "quando": "2026-11-01T17:02:26+00:00",
+          "por_pessoa": 4054
         }
       ],
       "origem": "MAD",
@@ -2633,6 +2700,19 @@
           "opcoes": 5,
           "quando": "2026-10-31T15:59:03+00:00",
           "por_pessoa": 4998
+        },
+        {
+          "preco_total": 9979,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTElTcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Tap Air Portugal + Gol",
+          "escalas": 1,
+          "duracao_min": 555,
+          "saida": "17:40",
+          "opcoes": 6,
+          "quando": "2026-11-01T17:02:30+00:00",
+          "por_pessoa": 4990
         }
       ],
       "origem": "LIS",
@@ -3110,6 +3190,24 @@
           ],
           "quando": "2026-10-28T17:05:25+00:00",
           "por_pessoa": 4634
+        },
+        {
+          "preco_total": 8279,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDQkNOcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 1840,
+          "saida": "20:25",
+          "opcoes": 12,
+          "nivel": "low",
+          "faixa_tipica": [
+            9400,
+            12000
+          ],
+          "quando": "2026-11-01T17:05:14+00:00",
+          "por_pessoa": 4140
         }
       ],
       "origem": "BCN",
@@ -3540,6 +3638,19 @@
           "opcoes": 9,
           "quando": "2026-10-31T15:59:16+00:00",
           "por_pessoa": 4762
+        },
+        {
+          "preco_total": 9533,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDT1JZcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "12:00",
+          "opcoes": 9,
+          "quando": "2026-11-01T17:02:43+00:00",
+          "por_pessoa": 4766
         }
       ],
       "origem": "PAR",
@@ -3975,6 +4086,19 @@
           "opcoes": 9,
           "quando": "2026-10-31T15:59:21+00:00",
           "por_pessoa": 4050
+        },
+        {
+          "preco_total": 8108,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTUFEcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 9,
+          "quando": "2026-11-01T17:02:48+00:00",
+          "por_pessoa": 4054
         }
       ],
       "origem": "MAD",
@@ -4410,6 +4534,19 @@
           "opcoes": 5,
           "quando": "2026-10-31T15:59:25+00:00",
           "por_pessoa": 4571
+        },
+        {
+          "preco_total": 7819,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTElTcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "LATAM",
+          "escalas": 2,
+          "duracao_min": 835,
+          "saida": "19:20",
+          "opcoes": 6,
+          "quando": "2026-11-01T17:02:52+00:00",
+          "por_pessoa": 3910
         }
       ],
       "origem": "LIS",
@@ -4887,6 +5024,24 @@
           ],
           "quando": "2026-10-28T17:05:31+00:00",
           "por_pessoa": 4023
+        },
+        {
+          "preco_total": 8203,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDQkNOcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 940,
+          "saida": "11:25",
+          "opcoes": 12,
+          "nivel": "low",
+          "faixa_tipica": [
+            9400,
+            12000
+          ],
+          "quando": "2026-11-01T17:05:18+00:00",
+          "por_pessoa": 4102
         }
       ],
       "origem": "BCN",
@@ -5330,6 +5485,19 @@
           "opcoes": 11,
           "quando": "2026-10-31T15:59:38+00:00",
           "por_pessoa": 4762
+        },
+        {
+          "preco_total": 9533,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDT1JZcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "14:40",
+          "opcoes": 10,
+          "quando": "2026-11-01T17:03:05+00:00",
+          "por_pessoa": 4766
         }
       ],
       "origem": "PAR",
@@ -5755,6 +5923,19 @@
           "opcoes": 7,
           "quando": "2026-10-31T15:59:43+00:00",
           "por_pessoa": 4050
+        },
+        {
+          "preco_total": 8108,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTUFEcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 7,
+          "quando": "2026-11-01T17:03:09+00:00",
+          "por_pessoa": 4054
         }
       ],
       "origem": "MAD",
@@ -6203,6 +6384,19 @@
           "opcoes": 6,
           "quando": "2026-10-31T15:59:47+00:00",
           "por_pessoa": 3907
+        },
+        {
+          "preco_total": 7819,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTElTcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "LATAM",
+          "escalas": 2,
+          "duracao_min": 860,
+          "saida": "18:35",
+          "opcoes": 5,
+          "quando": "2026-11-01T17:03:14+00:00",
+          "por_pessoa": 3910
         }
       ],
       "origem": "LIS",
@@ -6675,6 +6869,24 @@
           ],
           "quando": "2026-10-28T17:05:35+00:00",
           "por_pessoa": 4060
+        },
+        {
+          "preco_total": 8279,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDQkNOcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 1845,
+          "saida": "20:20",
+          "opcoes": 14,
+          "nivel": "low",
+          "faixa_tipica": [
+            9400,
+            12000
+          ],
+          "quando": "2026-11-01T17:05:21+00:00",
+          "por_pessoa": 4140
         }
       ],
       "origem": "BCN",
@@ -7118,6 +7330,19 @@
           "opcoes": 8,
           "quando": "2026-10-31T16:00:01+00:00",
           "por_pessoa": 4986
+        },
+        {
+          "preco_total": 11104,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDT1JZcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal + Gol",
+          "escalas": 2,
+          "duracao_min": 780,
+          "saida": "14:40",
+          "opcoes": 6,
+          "quando": "2026-11-01T17:03:26+00:00",
+          "por_pessoa": 5552
         }
       ],
       "origem": "PAR",
@@ -7571,6 +7796,19 @@
           "opcoes": 8,
           "quando": "2026-10-31T16:00:05+00:00",
           "por_pessoa": 13096
+        },
+        {
+          "preco_total": 21095,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTUFEcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 8,
+          "quando": "2026-11-01T17:03:31+00:00",
+          "por_pessoa": 10548
         }
       ],
       "origem": "MAD",
@@ -8024,6 +8262,19 @@
           "opcoes": 14,
           "quando": "2026-10-31T16:00:10+00:00",
           "por_pessoa": 15235
+        },
+        {
+          "preco_total": 30616,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTElTcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Air Europa + LATAM",
+          "escalas": 2,
+          "duracao_min": 845,
+          "saida": "20:05",
+          "opcoes": 18,
+          "quando": "2026-11-01T17:03:35+00:00",
+          "por_pessoa": 15308
         }
       ],
       "origem": "LIS",
@@ -8496,6 +8747,24 @@
           ],
           "quando": "2026-10-28T17:05:38+00:00",
           "por_pessoa": 10417
+        },
+        {
+          "preco_total": 21239,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDQkNOcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 1705,
+          "saida": "22:40",
+          "opcoes": 14,
+          "nivel": "typical",
+          "faixa_tipica": [
+            21000,
+            25000
+          ],
+          "quando": "2026-11-01T17:05:28+00:00",
+          "por_pessoa": 10620
         }
       ],
       "origem": "BCN",
@@ -8949,6 +9218,19 @@
           "opcoes": 11,
           "quando": "2026-10-31T16:00:23+00:00",
           "por_pessoa": 12198
+        },
+        {
+          "preco_total": 29225,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDT1JZcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "21:15",
+          "opcoes": 10,
+          "quando": "2026-11-01T17:03:48+00:00",
+          "por_pessoa": 14612
         }
       ],
       "origem": "PAR",
@@ -9387,6 +9669,19 @@
           "opcoes": 12,
           "quando": "2026-10-31T16:00:28+00:00",
           "por_pessoa": 10539
+        },
+        {
+          "preco_total": 26021,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTUFEcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal + Azul",
+          "escalas": 2,
+          "duracao_min": 635,
+          "saida": "20:10",
+          "opcoes": 11,
+          "quando": "2026-11-01T17:03:53+00:00",
+          "por_pessoa": 13010
         }
       ],
       "origem": "MAD",
@@ -9830,6 +10125,19 @@
           "opcoes": 5,
           "quando": "2026-10-31T16:00:32+00:00",
           "por_pessoa": 15235
+        },
+        {
+          "preco_total": 30616,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTElTcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "Air Europa + Gol",
+          "escalas": 2,
+          "duracao_min": 845,
+          "saida": "20:05",
+          "opcoes": 7,
+          "quando": "2026-11-01T17:03:57+00:00",
+          "por_pessoa": 15308
         }
       ],
       "origem": "LIS",
@@ -10284,6 +10592,24 @@
           ],
           "quando": "2026-10-27T16:19:23+00:00",
           "por_pessoa": 10361
+        },
+        {
+          "preco_total": 24898,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDQkNOcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 940,
+          "saida": "11:25",
+          "opcoes": 4,
+          "nivel": "typical",
+          "faixa_tipica": [
+            21000,
+            25000
+          ],
+          "quando": "2026-11-01T17:04:59+00:00",
+          "por_pessoa": 12449
         }
       ],
       "origem": "BCN",
@@ -10732,6 +11058,19 @@
           "opcoes": 9,
           "quando": "2026-10-31T16:00:46+00:00",
           "por_pessoa": 14027
+        },
+        {
+          "preco_total": 28077,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDT1JZcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "14:40",
+          "opcoes": 9,
+          "quando": "2026-11-01T17:04:10+00:00",
+          "por_pessoa": 14038
         }
       ],
       "origem": "PAR",
@@ -11180,6 +11519,19 @@
           "opcoes": 9,
           "quando": "2026-10-31T16:00:50+00:00",
           "por_pessoa": 10539
+        },
+        {
+          "preco_total": 21095,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTUFEcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "MAD",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 610,
+          "saida": "22:25",
+          "opcoes": 9,
+          "quando": "2026-11-01T17:04:15+00:00",
+          "por_pessoa": 10548
         }
       ],
       "origem": "MAD",
@@ -12046,6 +12398,24 @@
           ],
           "quando": "2026-10-27T16:19:27+00:00",
           "por_pessoa": 10361
+        },
+        {
+          "preco_total": 21239,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDQkNOcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 940,
+          "saida": "11:25",
+          "opcoes": 13,
+          "nivel": "typical",
+          "faixa_tipica": [
+            21000,
+            25000
+          ],
+          "quando": "2026-11-01T17:05:04+00:00",
+          "por_pessoa": 10620
         }
       ],
       "origem": "BCN",
@@ -12494,6 +12864,19 @@
           "opcoes": 6,
           "quando": "2026-10-31T16:01:07+00:00",
           "por_pessoa": 17960
+        },
+        {
+          "preco_total": 35948,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDQ0RHcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "CDG",
+          "companhia": "ITA + LATAM",
+          "escalas": 2,
+          "duracao_min": 970,
+          "saida": "06:10",
+          "opcoes": 7,
+          "quando": "2026-11-01T17:04:33+00:00",
+          "por_pessoa": 17974
         }
       ],
       "origem": "PAR",
@@ -13364,6 +13747,19 @@
           "opcoes": 6,
           "quando": "2026-10-31T16:01:16+00:00",
           "por_pessoa": 15552
+        },
+        {
+          "preco_total": 28218,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTElTcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "LIS",
+          "companhia": "SWISS + LATAM",
+          "escalas": 2,
+          "duracao_min": 1020,
+          "saida": "15:45",
+          "opcoes": 8,
+          "quando": "2026-11-01T17:04:42+00:00",
+          "por_pessoa": 14109
         }
       ],
       "origem": "LIS",
@@ -13818,6 +14214,24 @@
           ],
           "quando": "2026-10-27T16:19:32+00:00",
           "por_pessoa": 10361
+        },
+        {
+          "preco_total": 21239,
+          "fonte": "SerpApi",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDQkNOcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "BCN",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 940,
+          "saida": "11:25",
+          "opcoes": 17,
+          "nivel": "typical",
+          "faixa_tipica": [
+            21000,
+            25000
+          ],
+          "quando": "2026-11-01T17:05:07+00:00",
+          "por_pessoa": 10620
         }
       ],
       "origem": "BCN",
@@ -14248,6 +14662,19 @@
           "opcoes": 7,
           "quando": "2026-10-31T16:01:30+00:00",
           "por_pessoa": 14027
+        },
+        {
+          "preco_total": 28077,
+          "fonte": "fast-flights",
+          "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDT1JZcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+          "aeroporto": "ORY",
+          "companhia": "Tap Air Portugal",
+          "escalas": 1,
+          "duracao_min": 680,
+          "saida": "14:40",
+          "opcoes": 8,
+          "quando": "2026-11-01T17:04:55+00:00",
+          "por_pessoa": 14038
         }
       ],
       "origem": "PAR",
@@ -14271,61 +14698,6 @@
     }
   },
   "alertas": [
-    {
-      "de": 19382,
-      "para": 19339,
-      "economia": 43,
-      "tipo": "recorde",
-      "combo": "MAD-SSA|2027-07-04|business",
-      "cidade": "Madrid",
-      "data": "2027-07-04",
-      "classe": "business",
-      "quando": "2026-10-07T17:44:17+00:00"
-    },
-    {
-      "de": 28019,
-      "para": 27957,
-      "economia": 62,
-      "tipo": "queda",
-      "combo": "LIS-SSA|2027-07-04|business",
-      "cidade": "Lisboa",
-      "data": "2027-07-04",
-      "classe": "business",
-      "quando": "2026-10-07T17:44:22+00:00"
-    },
-    {
-      "de": 24088,
-      "para": 24040,
-      "economia": 48,
-      "tipo": "recorde",
-      "combo": "MAD-SSA|2027-07-05|business",
-      "cidade": "Madrid",
-      "data": "2027-07-05",
-      "classe": "business",
-      "quando": "2026-10-07T17:44:39+00:00"
-    },
-    {
-      "de": 23649,
-      "para": 23597,
-      "economia": 52,
-      "tipo": "recorde",
-      "combo": "LIS-SSA|2027-07-05|business",
-      "cidade": "Lisboa",
-      "data": "2027-07-05",
-      "classe": "business",
-      "quando": "2026-10-07T17:44:43+00:00"
-    },
-    {
-      "de": 19514,
-      "para": 19471,
-      "economia": 43,
-      "tipo": "recorde",
-      "combo": "BCN-SSA|2027-07-06|business",
-      "cidade": "Barcelona",
-      "data": "2027-07-06",
-      "classe": "business",
-      "quando": "2026-10-07T17:45:21+00:00"
-    },
     {
       "de": 8093,
       "para": 8075,
@@ -17570,6 +17942,61 @@
       "data": "2027-07-05",
       "classe": "economy",
       "quando": "2026-10-31T15:59:21+00:00"
+    },
+    {
+      "de": 9996,
+      "para": 9979,
+      "economia": 17,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-04|economy",
+      "cidade": "Lisboa",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "quando": "2026-11-01T17:02:30+00:00"
+    },
+    {
+      "de": 9142,
+      "para": 7819,
+      "economia": 1323,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-05|economy",
+      "cidade": "Lisboa",
+      "data": "2027-07-05",
+      "classe": "economy",
+      "quando": "2026-11-01T17:02:52+00:00"
+    },
+    {
+      "de": 26193,
+      "para": 21095,
+      "economia": 5098,
+      "tipo": "queda",
+      "combo": "MAD-SSA|2027-07-03|business",
+      "cidade": "Madrid",
+      "data": "2027-07-03",
+      "classe": "business",
+      "quando": "2026-11-01T17:03:31+00:00"
+    },
+    {
+      "de": 31104,
+      "para": 28218,
+      "economia": 2886,
+      "tipo": "queda",
+      "combo": "LIS-SSA|2027-07-06|business",
+      "cidade": "Lisboa",
+      "data": "2027-07-06",
+      "classe": "business",
+      "quando": "2026-11-01T17:04:42+00:00"
+    },
+    {
+      "de": 9267,
+      "para": 8279,
+      "economia": 988,
+      "tipo": "queda",
+      "combo": "BCN-SSA|2027-07-04|economy",
+      "cidade": "Barcelona",
+      "data": "2027-07-04",
+      "classe": "economy",
+      "quando": "2026-11-01T17:05:14+00:00"
     }
   ],
   "execucoes": [
@@ -17968,10 +18395,29 @@
         "Barcelona 06/07 Econômica: fast-flights: BCN: 'NoneType' object is not subscriptable",
         "Barcelona 03/07 Executiva: fast-flights: BCN: 'NoneType' object is not subscriptable"
       ]
+    },
+    {
+      "quando": "2026-11-01T17:02:03+00:00",
+      "ok": 30,
+      "falhas": 2,
+      "via_serpapi": 8,
+      "detalhes": [
+        "Lisboa 05/07 Executiva: fast-flights: LIS: no flights found; received error",
+        "Madrid 06/07 Executiva: fast-flights: MAD: no flights found; received error"
+      ],
+      "descoberta": {
+        "cidades": 21,
+        "falhas": 145,
+        "promovidas": {
+          "economy": [],
+          "business": []
+        }
+      }
     }
   ],
   "uso_serpapi": {
-    "2026-10": 240
+    "2026-10": 240,
+    "2026-11": 8
   },
   "config": {
     "destino": "SSA",
@@ -18011,8 +18457,8 @@
     "business": []
   },
   "descoberta": {
-    "quando": "2026-10-25T15:10:10+00:00",
-    "falhas": 154,
+    "quando": "2026-11-01T17:18:02+00:00",
+    "falhas": 145,
     "resultados": {
       "economy": {
         "OPO": {
@@ -18022,7 +18468,7 @@
           ],
           "precos": {
             "2027-07-03": {
-              "preco_total": 9818,
+              "preco_total": 10755,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDT1BPcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "OPO",
@@ -18030,12 +18476,12 @@
               "escalas": 2,
               "duracao_min": 625,
               "saida": "05:05",
-              "opcoes": 9,
-              "quando": "2026-10-25T14:57:30+00:00",
-              "por_pessoa": 4909
+              "opcoes": 7,
+              "quando": "2026-11-01T17:05:32+00:00",
+              "por_pessoa": 5378
             },
             "2027-07-04": {
-              "preco_total": 9818,
+              "preco_total": 10755,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDT1BPcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "OPO",
@@ -18043,44 +18489,30 @@
               "escalas": 2,
               "duracao_min": 620,
               "saida": "07:00",
-              "opcoes": 9,
-              "quando": "2026-10-25T14:57:34+00:00",
-              "por_pessoa": 4909
+              "opcoes": 8,
+              "quando": "2026-11-01T17:05:36+00:00",
+              "por_pessoa": 5378
             },
             "2027-07-05": {
-              "preco_total": 9934,
+              "preco_total": 10755,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDT1BPcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "OPO",
-              "companhia": "Tap Air Portugal + Gol",
-              "escalas": 1,
-              "duracao_min": 735,
-              "saida": "12:45",
-              "opcoes": 10,
-              "quando": "2026-10-25T14:57:39+00:00",
-              "por_pessoa": 4967
-            },
-            "2027-07-06": {
-              "preco_total": 9276,
-              "fonte": "fast-flights",
-              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDT1BPcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
-              "aeroporto": "OPO",
-              "companhia": "KLM + Gol",
+              "companhia": "Tap Air Portugal + LATAM",
               "escalas": 2,
-              "duracao_min": 1000,
-              "saida": "05:00",
-              "opcoes": 8,
-              "quando": "2026-10-25T14:57:44+00:00",
-              "por_pessoa": 4638
+              "duracao_min": 620,
+              "saida": "07:00",
+              "opcoes": 10,
+              "quando": "2026-11-01T17:05:40+00:00",
+              "por_pessoa": 5378
             }
           },
           "vantagem": {
-            "2027-07-03": -1656,
-            "2027-07-04": -2892,
-            "2027-07-05": -2794,
-            "2027-07-06": -2136
+            "2027-07-03": -1808,
+            "2027-07-04": -2647,
+            "2027-07-05": -2936
           },
-          "melhor_vantagem_rel": -0.20289144817446705
+          "melhor_vantagem_rel": -0.20207890913155246
         },
         "LON": {
           "cidade": "Londres",
@@ -18090,20 +18522,20 @@
           ],
           "precos": {
             "2027-07-03": {
-              "preco_total": 10543,
+              "preco_total": 11540,
               "fonte": "fast-flights",
-              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTEdXcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
-              "aeroporto": "LGW",
-              "companhia": "Tap Air Portugal",
-              "escalas": 1,
-              "duracao_min": 695,
-              "saida": "10:40",
-              "opcoes": 11,
-              "quando": "2026-10-25T14:59:55+00:00",
-              "por_pessoa": 5272
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTEhScgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "LHR",
+              "companhia": "British Airways + LATAM",
+              "escalas": 2,
+              "duracao_min": 930,
+              "saida": "16:30",
+              "opcoes": 9,
+              "quando": "2026-11-01T17:07:54+00:00",
+              "por_pessoa": 5770
             },
             "2027-07-04": {
-              "preco_total": 10412,
+              "preco_total": 11420,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTEdXcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "LGW",
@@ -18112,29 +18544,110 @@
               "duracao_min": 1195,
               "saida": "17:30",
               "opcoes": 8,
-              "quando": "2026-10-25T15:00:04+00:00",
-              "por_pessoa": 5206
+              "quando": "2026-11-01T17:08:02+00:00",
+              "por_pessoa": 5710
             },
             "2027-07-05": {
-              "preco_total": 10307,
+              "preco_total": 10224,
               "fonte": "fast-flights",
-              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTEdXcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTEhScgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "LHR",
+              "companhia": "Tap Air Portugal",
+              "escalas": 1,
+              "duracao_min": 695,
+              "saida": "11:20",
+              "opcoes": 7,
+              "quando": "2026-11-01T17:08:11+00:00",
+              "por_pessoa": 5112
+            },
+            "2027-07-06": {
+              "preco_total": 10170,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTEdXcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "LGW",
-              "companhia": "Air Europa + Aerolineas Argentinas",
-              "escalas": 2,
-              "duracao_min": 1195,
-              "saida": "10:00",
-              "opcoes": 9,
-              "quando": "2026-10-25T15:00:12+00:00",
-              "por_pessoa": 5154
+              "companhia": "Tap Air Portugal",
+              "escalas": 1,
+              "duracao_min": 695,
+              "saida": "10:40",
+              "opcoes": 11,
+              "quando": "2026-11-01T17:08:20+00:00",
+              "por_pessoa": 5085
             }
           },
           "vantagem": {
-            "2027-07-03": -2381,
-            "2027-07-04": -3486,
-            "2027-07-05": -3167
+            "2027-07-03": -2593,
+            "2027-07-04": -3312,
+            "2027-07-05": -2405,
+            "2027-07-06": -2351
           },
-          "melhor_vantagem_rel": -0.2917177162460181
+          "melhor_vantagem_rel": -0.2898178160277188
+        },
+        "ROM": {
+          "cidade": "Roma",
+          "aeroportos": [
+            "FCO"
+          ],
+          "precos": {
+            "2027-07-03": {
+              "preco_total": 9294,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDRkNPcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "FCO",
+              "companhia": "Aerolineas Argentinas",
+              "escalas": 1,
+              "duracao_min": 1125,
+              "saida": "19:15",
+              "opcoes": 7,
+              "quando": "2026-11-01T17:10:40+00:00",
+              "por_pessoa": 4647
+            },
+            "2027-07-04": {
+              "preco_total": 9385,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDRkNPcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "FCO",
+              "companhia": "Tap Air Portugal",
+              "escalas": 1,
+              "duracao_min": 715,
+              "saida": "13:00",
+              "opcoes": 8,
+              "quando": "2026-11-01T17:10:45+00:00",
+              "por_pessoa": 4692
+            },
+            "2027-07-05": {
+              "preco_total": 9294,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDRkNPcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "FCO",
+              "companhia": "Aerolineas Argentinas",
+              "escalas": 1,
+              "duracao_min": 1125,
+              "saida": "19:15",
+              "opcoes": 8,
+              "quando": "2026-11-01T17:10:49+00:00",
+              "por_pessoa": 4647
+            },
+            "2027-07-06": {
+              "preco_total": 9385,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDRkNPcgUSA1NTQUICAQFIAZgBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "FCO",
+              "companhia": "Tap Air Portugal",
+              "escalas": 1,
+              "duracao_min": 715,
+              "saida": "20:00",
+              "opcoes": 8,
+              "quando": "2026-11-01T17:10:53+00:00",
+              "por_pessoa": 4692
+            }
+          },
+          "vantagem": {
+            "2027-07-03": -347,
+            "2027-07-04": -1277,
+            "2027-07-05": -1475,
+            "2027-07-06": -1566
+          },
+          "melhor_vantagem_rel": -0.03878394992734995
         }
       },
       "business": {
@@ -18145,7 +18658,7 @@
           ],
           "precos": {
             "2027-07-03": {
-              "preco_total": 23408,
+              "preco_total": 25655,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDT1BPcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "OPO",
@@ -18153,12 +18666,12 @@
               "escalas": 2,
               "duracao_min": 840,
               "saida": "20:10",
-              "opcoes": 12,
-              "quando": "2026-10-25T15:03:53+00:00",
-              "por_pessoa": 11704
+              "opcoes": 9,
+              "quando": "2026-11-01T17:11:49+00:00",
+              "por_pessoa": 12828
             },
             "2027-07-04": {
-              "preco_total": 27289,
+              "preco_total": 29914,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDT1BPcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "OPO",
@@ -18167,11 +18680,11 @@
               "duracao_min": 590,
               "saida": "22:30",
               "opcoes": 11,
-              "quando": "2026-10-25T15:03:57+00:00",
-              "por_pessoa": 13644
+              "quando": "2026-11-01T17:11:53+00:00",
+              "por_pessoa": 14957
             },
             "2027-07-05": {
-              "preco_total": 23408,
+              "preco_total": 25655,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDT1BPcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "OPO",
@@ -18180,30 +18693,30 @@
               "duracao_min": 840,
               "saida": "20:10",
               "opcoes": 9,
-              "quando": "2026-10-25T15:04:02+00:00",
-              "por_pessoa": 11704
+              "quando": "2026-11-01T17:11:58+00:00",
+              "por_pessoa": 12828
             },
             "2027-07-06": {
-              "preco_total": 23460,
+              "preco_total": 28135,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDT1BPcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "OPO",
-              "companhia": "Air Europa + LATAM",
+              "companhia": "SWISS + LATAM",
               "escalas": 2,
-              "duracao_min": 845,
-              "saida": "20:10",
-              "opcoes": 7,
-              "quando": "2026-10-25T15:04:06+00:00",
-              "por_pessoa": 11730
+              "duracao_min": 995,
+              "saida": "12:15",
+              "opcoes": 6,
+              "quando": "2026-11-01T17:12:02+00:00",
+              "por_pessoa": 14068
             }
           },
           "vantagem": {
-            "2027-07-03": -4032,
-            "2027-07-04": -8045,
-            "2027-07-05": -4164,
-            "2027-07-06": -4216
+            "2027-07-03": -4560,
+            "2027-07-04": -5016,
+            "2027-07-05": -4560,
+            "2027-07-06": -7057
           },
-          "melhor_vantagem_rel": -0.20809248554913296
+          "melhor_vantagem_rel": -0.20146196481645112
         },
         "LON": {
           "cidade": "Londres",
@@ -18213,7 +18726,7 @@
           ],
           "precos": {
             "2027-07-03": {
-              "preco_total": 26487,
+              "preco_total": 29068,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDTEdXcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "LGW",
@@ -18221,12 +18734,12 @@
               "escalas": 1,
               "duracao_min": 695,
               "saida": "16:30",
-              "opcoes": 14,
-              "quando": "2026-10-25T15:06:16+00:00",
-              "por_pessoa": 13244
+              "opcoes": 12,
+              "quando": "2026-11-01T17:14:11+00:00",
+              "por_pessoa": 14534
             },
             "2027-07-04": {
-              "preco_total": 26569,
+              "preco_total": 29158,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDTEdXcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "LGW",
@@ -18235,11 +18748,11 @@
               "duracao_min": 730,
               "saida": "21:15",
               "opcoes": 12,
-              "quando": "2026-10-25T15:06:26+00:00",
-              "por_pessoa": 13284
+              "quando": "2026-11-01T17:14:19+00:00",
+              "por_pessoa": 14579
             },
             "2027-07-05": {
-              "preco_total": 26487,
+              "preco_total": 29068,
               "fonte": "fast-flights",
               "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDTEdXcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
               "aeroporto": "LGW",
@@ -18247,54 +18760,135 @@
               "escalas": 1,
               "duracao_min": 695,
               "saida": "16:25",
-              "opcoes": 9,
-              "quando": "2026-10-25T15:06:34+00:00",
-              "por_pessoa": 13244
+              "opcoes": 10,
+              "quando": "2026-11-01T17:14:28+00:00",
+              "por_pessoa": 14534
+            },
+            "2027-07-06": {
+              "preco_total": 26043,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDTEdXcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "LGW",
+              "companhia": "Tap Air Portugal",
+              "escalas": 2,
+              "duracao_min": 735,
+              "saida": "12:05",
+              "opcoes": 10,
+              "quando": "2026-11-01T17:14:37+00:00",
+              "por_pessoa": 13022
             }
           },
           "vantagem": {
-            "2027-07-03": -7111,
-            "2027-07-04": -7325,
-            "2027-07-05": -7243
+            "2027-07-03": -7973,
+            "2027-07-04": -4260,
+            "2027-07-05": -7973,
+            "2027-07-06": -4965
           },
-          "melhor_vantagem_rel": -0.36700041288191576
+          "melhor_vantagem_rel": -0.1710980801670817
+        },
+        "ROM": {
+          "cidade": "Roma",
+          "aeroportos": [
+            "FCO"
+          ],
+          "precos": {
+            "2027-07-03": {
+              "preco_total": 27919,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDNqBRIDRkNPcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "FCO",
+              "companhia": "Tap Air Portugal + Gol",
+              "escalas": 2,
+              "duracao_min": 945,
+              "saida": "13:00",
+              "opcoes": 9,
+              "quando": "2026-11-01T17:16:58+00:00",
+              "por_pessoa": 13960
+            },
+            "2027-07-04": {
+              "preco_total": 26397,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDRqBRIDRkNPcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "FCO",
+              "companhia": "KLM + Air France",
+              "escalas": 2,
+              "duracao_min": 830,
+              "saida": "19:40",
+              "opcoes": 10,
+              "quando": "2026-11-01T17:17:02+00:00",
+              "por_pessoa": 13198
+            },
+            "2027-07-05": {
+              "preco_total": 26682,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDVqBRIDRkNPcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "FCO",
+              "companhia": "KLM + Gol",
+              "escalas": 2,
+              "duracao_min": 975,
+              "saida": "06:30",
+              "opcoes": 9,
+              "quando": "2026-11-01T17:17:07+00:00",
+              "por_pessoa": 13341
+            },
+            "2027-07-06": {
+              "preco_total": 25547,
+              "fonte": "fast-flights",
+              "link": "https://www.google.com/travel/flights?tfs=GhoSCjIwMjctMDctMDZqBRIDRkNPcgUSA1NTQUICAQFIA5gBAg%3D%3D&hl=pt-BR&curr=BRL",
+              "aeroporto": "FCO",
+              "companhia": "ITA + LATAM",
+              "escalas": 1,
+              "duracao_min": 835,
+              "saida": "21:55",
+              "opcoes": 12,
+              "quando": "2026-11-01T17:17:11+00:00",
+              "por_pessoa": 12774
+            }
+          },
+          "vantagem": {
+            "2027-07-03": -6824,
+            "2027-07-04": -1499,
+            "2027-07-05": -5587,
+            "2027-07-06": -4469
+          },
+          "melhor_vantagem_rel": -0.06020563900714917
         }
       }
     },
     "referencia": {
       "economy": {
         "2027-07-03": {
-          "preco": 8162,
+          "preco": 8947,
           "cidade": "Madrid"
         },
         "2027-07-04": {
-          "preco": 6926,
+          "preco": 8108,
           "cidade": "Madrid"
         },
         "2027-07-05": {
-          "preco": 7140,
+          "preco": 7819,
           "cidade": "Lisboa"
         },
         "2027-07-06": {
-          "preco": 7140,
+          "preco": 7819,
           "cidade": "Lisboa"
         }
       },
       "business": {
         "2027-07-03": {
-          "preco": 19376,
-          "cidade": "Barcelona"
-        },
-        "2027-07-04": {
-          "preco": 19244,
+          "preco": 21095,
           "cidade": "Madrid"
         },
+        "2027-07-04": {
+          "preco": 24898,
+          "cidade": "Barcelona"
+        },
         "2027-07-05": {
-          "preco": 19244,
+          "preco": 21095,
           "cidade": "Madrid"
         },
         "2027-07-06": {
-          "preco": 19244,
+          "preco": 21078,
           "cidade": "Madrid"
         }
       }
@@ -18316,7 +18910,6 @@
         "Zurique",
         "Genebra",
         "Viena",
-        "Roma",
         "Milão",
         "Nice",
         "Lyon"
@@ -18337,7 +18930,6 @@
         "Zurique",
         "Genebra",
         "Viena",
-        "Roma",
         "Milão",
         "Nice",
         "Lyon"
@@ -18345,5 +18937,5 @@
     },
     "dia_da_semana": "domingo"
   },
-  "atualizado_em": "2026-10-31T16:01:30+00:00"
+  "atualizado_em": "2026-11-01T17:18:02+00:00"
 }
